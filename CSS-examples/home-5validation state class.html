@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:required{
+            border: 1px solid red ;
+            outline: none;
+            
+        }
+        input+span{
+            display: none;
+        }
+        input:required+span{
+            display: inline;
+            color: red;
+            font-size: 13px;
+
+        }
+        input:valid+span{
+            display: none;
+        }
+        input:valid~div{
+            display: none;
+        }
+        input:invalid~div{
+            display: block;
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <dt>
+        <dt>user name</dt>
+        <dd><input type="text"> <span>*</span>
+        </dd>
+        <dt>passwprd</dt>
+        <dd><input type="password" required><span>*</span><div>name required</div></dd>
+        <dt>age</dt>
+        <dd><input type="number" min="15" max="30"><span>*</span>
+        <div>age 15 to 30 only</div></dd>
+        <dt>mobile</dt>
+        <dd><input type="text" required pattern="^\+91\d{10}$"><span>*</span>
+        <div>mobile required <br>+91 10 digits only</div></dd>
+    </dt>
+    
+</body>
+</html>

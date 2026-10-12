@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <script>
+        function bodyload(){
+            fetch(`https://dummyjson.com/recipes`)
+            .then(function(response){
+                return response.json();
+
+            })
+            .then(function(data){
+                data.recipes.map(function(recipe){
+                    var div =document.createElement("div")
+                    div.className = "card m-2 p-2";
+                    div.style.width = "200px";
+                    div.innerHTML = `
+                    <img class="card-img-top" src="${recipe.image}" height="120">
+                    <div class="card-header" style="height:100px">
+                        ${recipe.name}
+                    </div>
+                    <div class="card-body bg-warning text-danger"  >
+                        ${recipe.cuisine}
+                    </div>
+                  <div class="card-footer">
+                              <span class="bi bi-clock"> ${recipe.prepTimeMinutes} mins </span>
+                              <div class="mt-2">
+                                 <button data-bs-target="#details" data-bs-toggle="modal" class="btn btn-danger"> Cooking Details </button>
+                                 <div class="modal fade " id="details">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4>Preparation Instructions</h4> 
+                                                <button data-bs-dismiss="modal" class="btn btn-close"> </button>  
+                                            </div>
+                                            <div class="modal-body">
+                                                ${recipe.instructions.join("<br> > ")}
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                              </div>
+                          </div>
+                       `;
+
+                    document.querySelector("section").appendChild(div);
+                })
+            })
+        }
+    </script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <header class="d-flex p-4 bg-dark text-white">
+        <span class="bi bi-fork-knife fw-bold">Recipe Book</span>
+    </header>
+    <section class="mt-4 d-flex flex-wrap overflow-auto" style="height: 600px;">
+
+    </section>
+    
+</body>
+</html>

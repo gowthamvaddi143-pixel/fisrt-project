@@ -1,0 +1,311 @@
+
+  header {
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        padding: 20px;
+
+        font-size: 20px;
+
+        font-family: Arial;
+
+        background-color: whitesmoke;
+
+        align-items: center;
+
+    }
+
+    
+
+    .bi-bag-fill {
+
+        background-color: orange;
+
+        border-radius: 10px;
+
+        padding: 5px;
+
+        text-align: center;
+
+        color:white;
+
+        display: inline-block;
+
+        margin-right: 5px;
+
+    }
+
+    .article-button {
+
+        background-color: rgb(253, 241, 219);
+
+        color:rgb(255, 72, 0);
+
+        padding: 10px;
+
+        border-radius: 20px;
+
+        text-align: center;
+
+        width: 200px;
+
+    }
+
+    .article-title {
+
+        font-size: 40px;
+
+        font-weight: bold;
+
+        padding-top: 30px;
+
+    }
+
+    .article-title span {
+
+        color:darkorange;
+
+    }
+
+    .article-text {
+
+        font-size: 14px;
+
+        padding-top: 20px;
+
+        padding-bottom: 20px;
+
+    }
+
+    .btn-shop {
+
+        background-color: orangered;
+
+        color:white;
+
+        padding: 10px;
+
+        border:none;
+
+        width: 200px;
+
+        border-radius: 20px;
+
+        font-size: 18px;
+
+    }
+
+    .btn-browse {
+
+         background-color: rgb(125, 124, 124);
+
+        color:white;
+
+        padding: 10px;
+
+        border:none;
+
+        width: 200px;
+
+        border-radius: 20px;
+
+        font-size: 18px;
+
+    }
+
+    .article-facts {
+
+        display: grid;
+
+        grid-template-columns: 4fr 4fr 4fr;
+
+        margin-top: 30px;
+
+        font-size: 20px;
+
+    }
+
+    .fact-text {
+
+        font-size: 12px;
+
+    }
+
+@media screen and (orientation: landscape){
+
+  
+
+     .short-cuts span {
+
+        padding-right: 20px;
+
+        font-size: 17px;
+
+    }
+
+    nav span {
+
+        margin-right: 30px;
+
+        font-size: 17px;
+
+    }
+
+    article {
+
+        display: grid;
+
+        grid-template-columns: 6fr 6fr;
+
+        background-color: black;
+
+        color:white;
+
+        padding: 20px;
+
+      
+
+        border-radius: 20px;
+
+        font-family: Arial;
+
+    }
+
+    .article-image {
+
+        width: 80%;
+
+        border-radius: 50px;
+
+
+
+    }
+
+    .col-1 {
+
+        padding: 50px;
+
+    }
+
+    .col-2 {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+    .toggler {
+
+        display: none;
+
+    }
+
+}
+
+
+
+@media screen and (orientation: portrait){
+
+    nav {
+
+        display: none;
+
+    }
+
+     .short-cuts span {
+
+        padding-right: 5px;
+
+        font-size: 17px;
+
+    }
+
+    .bi-justify {
+
+        font-size: 20px;
+
+        border: none;
+
+    }
+
+     article {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        background-color: black;
+
+        color:white;
+
+        padding: 20px;  
+
+        border-radius: 20px;
+
+        font-family: Arial;
+
+        text-align: center;
+
+    }
+
+    .col-2 {
+
+        display: none;
+
+    }
+
+    .col-1 {
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        text-align: center;
+
+    }
+
+     .article-button {
+
+        background-color: rgb(253, 241, 219);
+
+        color:rgb(255, 72, 0);
+
+        padding: 5px;
+
+        border-radius: 20px;
+
+        text-align: center;
+
+        font-size: 12px;
+
+        width: 200px;
+
+        margin-left: 60px;
+
+    }
+
+    .btn-shop {
+
+        margin-bottom: 20px;
+
+    }
+
+}
+
+
+

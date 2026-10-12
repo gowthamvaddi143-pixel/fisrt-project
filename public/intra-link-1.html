@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        nav {
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+        nav span {
+
+            margin-right: 40px;
+
+        }
+
+        .card {
+
+            width: 200px;
+
+            border:1px solid black;
+
+            padding: 20px;
+
+            margin: 20px;
+
+            display: none;
+
+        }
+
+        section {
+
+            display: flex;
+
+            flex-direction: row;
+
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .card:target {
+
+            display: block;
+
+            background-color: black;
+
+            color:white;
+
+            border-radius: 100px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <span><a href="#html">HTML</a></span>
+
+            <span><a href="#js">Javascript</a></span>
+
+            <span><a href="#react">React</a></span>
+
+        </nav>
+
+    </header>
+
+    <section>
+
+        <div class="card" id="html">
+
+            <h2>HTML</h2>
+
+            <ul>
+
+                <li>Normal Elements</li>
+
+                <li>Links</li>
+
+                <li>Images</li>
+
+            </ul>
+
+        </div>
+
+        <div class="card" id="js">
+
+            <h2>Javascript</h2>
+
+            <ul>
+
+                <li>Variables</li>
+
+                <li>Operators</li>
+
+                <li>Statements</li>
+
+            </ul>
+
+        </div>
+
+        <div class="card" id="react">
+
+            <h2>React</h2>
+
+            <ul>
+
+                <li>Hooks</li>
+
+                <li>Components</li>
+
+                <li>Services</li>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

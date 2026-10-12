@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #700591;
+            color: white;
+            font-family: arial;
+            font-size: 18px;
+            align-items: center;
+            box-shadow: 0 0px 10px rgb(0,0,0,0.5);
+
+        }
+        .search-bar{
+            display: flex;
+            flex-direction: row;
+            width: 300px;
+            border: 1px #d6d2d2 solid;
+            padding: 10px;
+            font-size: 14px;
+            justify-content: space-between;
+            background-color: #9433b1;
+            align-items: center;
+            border-radius: 6px;
+        }
+        nav span{
+            padding-right: 20px;
+            
+        }
+        .short-cuts span{
+            padding-right: 10px;
+        }
+        .btn-command{
+            background-color: #3a0a49;
+            padding: 4px;
+            font-size: 12px;
+            border-radius: 8px;
+        }
+        .bootstrap{
+            font-size: 25px;
+        }
+        section{
+            height: 400px;
+
+        }
+        footer{
+            display: grid;
+            grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+            background-color: #f0efef;
+            padding: 10px;
+            
+        }
+        .col span{
+            display: block;
+            margin-top: 10px;
+            margin-bottom:10px ;
+            font-family: arial;
+            
+
+        }
+        .footer-title{
+            font-weight: bold;
+            font-size: 20px;
+            color: #696969;
+        }
+        .desc{
+            width: 300px;
+            font-family: arial;
+            font-size: 16px;
+            padding-bottom: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+         <div>
+            <nav>
+                 <span class="bi bi-bootstrap"></span>
+                 <span>docs</span>
+                 <span>Examples</span>
+                 <span>icons</span>
+                 <span> blog</span>
+            </nav>
+         </div>
+         <div>
+              <div class="search-bar">
+                 <span class="bi bi-search"><span>search</span></span>
+                 
+                     <div class="btn-command">
+                        <span class="bi bi-command"></span>
+                         <span>K</span>
+                    </div>
+                </div>
+
+              </div>
+        <div  class="short-cuts">
+
+            <span class="bi bi-github"></span>
+            <span class="bi bi-twitter-x"></span>
+            <span class="bi bi-opencollective"></span>
+            <span>|</span>
+            <span>v5.3</span>
+            <span class="bi bi-chevron-down"></span>
+            <span >|</span>
+            <span class="bi bi-brightness-high"></span>
+            <span class="bi bi-chevron-down"></span>
+
+        </div>
+
+
+     
+ </header> 
+ <section>
+
+ </section>  
+ <footer>
+
+     <div class="col">
+         <span class="bi bi-bootstrap">bootstrap</span>
+        <div class="desc">
+            Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.
+        </div>
+        <div>code licensed MIT,docs cc BY 3.0</div>
+        <div>Currently v5.3.8</div>
+
+    </div>
+
+    <div class="col">
+        <span class="footer-title">Link</span>
+        <span>Home</span>
+        <span> Docs</span>
+        <span>Expmples</span>
+        <span>Icons</span>
+        <span>Blog</span>
+        <span>Swag Store</span>
+    </div>
+
+    <div class="col">
+        <span class="footer-title">Guides</span>
+        <span>Getting started</span>
+        <span> Webpack</span>
+        <span>Parcel</span>
+        <span>vite</span>
+    </div>
+    <div class="col">
+        <span class="footer-title">Projects</span>
+        <span>Bootstrap 5</span>
+        <span> Bootstrap</span>
+        <span>Icons</span>
+        <span>RFS</span>
+        <span>Examples repo</span>
+
+    </div >
+    <div class="col">
+        <aside>
+             <span class="footer-title">Community</span>
+             <span>Isssues</span>
+             <span>Discussions</span>
+             <span>Corporate sponsonrs</span>
+             <span>Open Collective</span>
+             <span>Stack Overflow</span>
+        </aside>
+    </div>
+
+ </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+
+   Javascript AJAX
+
+   - Asynchronous Javascript And XML. 
+
+   - It enables partial post back. 
+
+   - It can load new content into page without reloading the page. 
+
+   - It allows to post and submit only a specific portion of page. 
+
+   - To handle AJAX request Javascript provides “XMLHttpRequest” object.
+
+   - It is a browser object used to make AJAX request from page

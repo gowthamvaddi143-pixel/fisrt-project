@@ -1,0 +1,229 @@
+1.Which attribute specifies the media type of the linked resource?
+A)rel
+B)media //answer
+C)type   
+D)kind
+
+Correct Answer: C. type
+
+Explanation (Simple)
+
+The type attribute specifies the MIME type (media type) of the linked resource.
+
+Example:
+
+<link rel="stylesheet" href="style.css" type="text/css">
+
+Here:
+
+rel="stylesheet" → Defines the relationship.
+href="style.css" → Specifies the file location.
+type="text/css" → Specifies the media (MIME) type of the linked resource.
+Why not the others?
+❌ A. rel → Defines the relationship (e.g., stylesheet, icon).
+❌ B. media → Specifies which devices/media the resource applies to (e.g., screen, print).
+✅ C. type → Specifies the media/MIME type (e.g., text/css).
+❌ D. kind → Used with <track>, not <link>.
+
+✅ Correct Answer: C. type
+
+
+2.Which rel value tells search engines not to pass authority to the linked page?
+A)noreferrer
+B)external
+C)nofollow //answer
+D)opener
+
+✅ Correct Answer: C. nofollow
+
+Explanation (Simple)
+
+The rel="nofollow" value tells search engines not to pass authority (link equity or "link juice") to the linked page.
+
+Example:
+
+<a href="https://example.com" rel="nofollow">
+  Visit Example
+</a>
+Why not the others?
+❌ A. noreferrer → Prevents the browser from sending the referring page information.
+❌ B. external → Indicates the link is to an external site; it does not affect SEO.
+✅ C. nofollow → Tells search engines not to pass authority to the linked page.
+❌ D. opener → Related to browser window behavior, not SEO.
+
+✅ Correct Answer: C. nofollow
+
+3.What is a "Broken Link"?
+A) link to a deleted file or 404 error  //answer
+B)A link with a purple color
+C)A link that opens in a new tab
+D)A link to a secure site
+
+4.What happens if you click a link with href="#"?
+A)It opens a new page
+B)It does nothing
+C)It scrolls the user to the top of the current page  //answer
+D)It shows an error
+
+5.Which of these is a valid "Local" link to an element with id="footer"?
+A)<a href="footer">
+B)<a href=".footer">
+C)<a href="#footer">  //answer
+D)<a href="id:footer">
+
+
+6.To make an image act as a link, where should the <img> tag be placed?
+A)Inside the <a> tag //answers
+B)Before the <a> tag
+C)After the <a> tag
+D)Inside the href attribute
+
+
+✅ Correct Answer: A. Inside the <a> tag
+
+Explanation (Simple)
+
+To make an image clickable, place the <img> tag inside the <a> (anchor) tag.
+
+Example:
+<a href="https://example.com">
+  <img src="logo.png" alt="Logo">
+</a>
+
+When the user clicks the image, they are taken to the link specified in the href attribute.
+
+Why not the others?
+✅ A. Inside the <a> tag → Correct.
+❌ B. Before the <a> tag → The image won't be part of the link.
+❌ C. After the <a> tag → The image won't be clickable.
+❌ D. Inside the href attribute → Invalid HTML.
+
+✅ Correct Answer: A. Inside the <a> tag
+
+
+7.What is the purpose of the hreflang attribute?
+A)To set the link color
+B)To specify the language of the linked document  //answer
+C)To set the page title
+D)To link to a script 
+
+✅ Correct Answer: B. To specify the language of the linked document
+
+Explanation (Simple)
+
+The hreflang attribute tells browsers and search engines the language (and optionally the region) of the linked page.
+
+Example:
+
+<a href="https://example.com/en" hreflang="en">English</a>
+
+<a href="https://example.com/fr" hreflang="fr">French</a>
+
+Here:
+
+hreflang="en" → English page
+hreflang="fr" → French page
+Why not the others?
+❌ A. To set the link color → Use CSS.
+✅ B. To specify the language of the linked document → Correct.
+❌ C. To set the page title → Use the title attribute or the <title> tag.
+❌ D. To link to a script → Use the <script> tag.
+
+✅ Correct Answer: B. To specify the language of the linked document
+
+
+8.Which character is used to separate the email address from the query parameters in a mailto link?
+A)&
+B);
+C)? //answer
+D)#
+
+✅ Correct Answer: C. ?
+
+Explanation (Simple)
+
+In a mailto: link, the ? character separates the email address from the query parameters (such as subject, body, cc, etc.).
+
+Example:
+<a href="mailto:abc@example.com?subject=Hello&body=How are you?">
+  Send Email
+</a>
+
+Here:
+
+mailto:abc@example.com → Email address
+? → Starts the query parameters
+subject=Hello → Email subject
+&body=How are you? → Additional parameter
+Why not the others?
+❌ A. & → Separates multiple query parameters.
+❌ B. ; → Not used for separating query parameters in a mailto: URL.
+✅ C. ? → Correct! Separates the email address from the query parameters.
+❌ D. # → Used for page fragments (anchors), not mailto: parameters.
+
+✅ Correct Answer: C. ?
+
+
+9.Can a mailto: link include a "CC" address?
+A)No
+B)Yes, using ?cc=address@email.com  //answer
+C)Only in Outlook
+D)Only with JavaScript
+
+
+✅ Correct Answer: B. Yes, using ?cc=address@email.com
+
+Explanation (Simple)
+
+A mailto: link can include a CC (Carbon Copy) email address by using the cc query parameter.
+
+Example:
+<a href="mailto:john@example.com?cc:jane@example.com">
+  Send Email
+</a>
+
+Correct syntax (with =):
+
+<a href="mailto:john@example.com?cc=jane@example.com">
+  Send Email
+</a>
+
+You can also include multiple parameters:
+
+<a href="mailto:john@example.com?cc=jane@example.com&subject=Meeting&body=Hello">
+  Send Email
+</a>
+Why not the others?
+❌ A. No → Incorrect. mailto: supports cc.
+✅ B. Yes, using ?cc=address@email.com → Correct.
+❌ C. Only in Outlook → Incorrect. It's supported by many email clients.
+❌ D. Only with JavaScript → Incorrect. JavaScript is not required.
+
+✅ Correct Answer: B. Yes, using ?cc=address@email.com
+
+
+10.Which prefix is used in the href attribute to initiate a phone call on mobile devices?
+A)call:
+B)phone:
+C)tel:
+D)dial:
+
+
+✅ Correct Answer: C. tel:
+
+Explanation (Simple)
+
+The tel: prefix is used in the href attribute to create a clickable phone number. On mobile devices, tapping the link opens the phone dialer.
+
+Example:
+<a href="tel:+919876543210">Call Us</a>
+
+When the user clicks "Call Us", the phone app opens with the number ready to dial.
+
+Why not the others?
+❌ A. call: → Not a valid URI scheme.
+❌ B. phone: → Not a valid URI scheme.
+✅ C. tel: → Correct! Used for phone numbers.
+❌ D. dial: → Not a valid URI scheme.
+
+✅ Correct Answer: C. tel:

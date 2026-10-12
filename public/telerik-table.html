@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telerik</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        table{
+            width: 100%;
+            padding: 20px;
+        }
+        .border{
+        }
+        .job{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .country{
+            padding-right   : 20px;
+        }
+        .photo{
+            width: 30px;
+            border-radius: 100%;
+        }
+        .flag{
+            width: 40px;
+
+        }
+        .color{
+            background: rgb(239, 238, 238);
+        }
+       
+
+       
+
+
+
+    </style>
+</head>
+<body>
+    <table border="1" cellpadding="15" >
+
+        <tr class="border">
+            <td rowspan="2">Contct Name</td>
+            
+            <td colspan="3">Employee</td>
+            <td>Performance</td>
+        </tr>
+        <tr>
+            <td align="center"><span class="bi bi-square"></span></td>
+            <td class="job">Job Title <span class="bi bi-three-dots-vertical"></span></td>
+            <td class="country">Country <span class=" bi bi-three-dots-vertical"></span></td>
+            <td>Engagement</td>
+
+        </tr>
+
+    </table>
+    <details>
+        <table  border="1" frame="void">
+            <tr>
+                 <td align="center" width="400"><span class="bi bi-square"></span></td>
+                 <td><img src="./images/fashion-man-casualware.jpg" class="photo"  ><span>Duky Hurring</span></td>
+                 <td rowspan="3">Accounts Executive</td>
+                 <td class="gap"><img src="./images/india.png" class="flag" ></td>
+                 <td><div></div></td>
+                
+            </tr>
+             <tr>
+                 <td align="center"  class="color"><span class="bi bi-square"></span></td>
+                 <td class="color"><img src="./images/fashion-man-casualware.jpg" class="photo"  ><span>Duky Hurring</span></td>
+                 <td class="color"><img src="./images/india.png" class="flag" ></td>
+                 <td class="color"><div class="bi bi-arrows-vertical"> </div></td>
+                
+            </tr>
+
+             <tr>
+                 <td align="center" ><span class="bi bi-square"></span></td>
+                 <td  ><img src="./images/fashion-man-casualware.jpg" class="photo"  ><span>Duky Hurring</span></td>
+                 <td><img src="./images/india.png" class="flag" ></td>
+                 <td><div></div></td>
+                
+            </tr>
+
+
+
+        </table>
+        
+        <summary>Account Executive</summary>
+    </details>
+    
+</body>
+</html>
+
+colspans& rowspans
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <table width="100%" border="1">
+
+        <thead>
+
+            <tr>
+
+                <th colspan="2">Name</th>
+
+                <th colspan="3">Address</th>
+
+            </tr>
+
+            <tr>
+
+                <th>First Name</th>
+
+                <th>Last Name</th>
+
+                <th>City</th>
+
+                <th>State</th>
+
+                <th>Postal Code</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+                <td rowspan="11" align="center">D<br>E<br>L<br>H<br>I</td>
+
+                <td rowspan="11" align="center">HYD</td>
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+            <tr>
+
+                <td>&nbsp;</td>
+
+                <td>&nbsp;</td>
+
+
+                <td>&nbsp;</td>
+
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

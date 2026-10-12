@@ -1,0 +1,127 @@
+What is the default horizontal alignment of text in a <td> cell?
+A)center
+B)right
+C)left //answer
+D)justify
+
+2.Every table must have a <thead>. True or False?
+A)True
+B)False  //answers
+C)Only if it has footer
+D)Only in HTML5
+
+3.Which attribute was used to specify which inner borders (lines between cells) should be visible?
+A)frame
+B)border
+C)rules  //answer
+D)grid
+
+✅ Correct Answer: C. rules
+
+Easy English Explanation
+
+The rules attribute was used in old HTML tables to control which inner borders (lines between cells) are shown.
+
+Example:
+<table border="1" rules="rows">
+  ...
+</table>
+
+rules values:
+
+rows → Show only row lines.
+cols → Show only column lines.
+all → Show all inner lines.
+none → Show no inner lines.
+Why the other options are wrong?
+❌ A. frame → Controls the outer border of the table.
+❌ B. border → Sets the border size, not which inner lines appear.
+❌ D. grid → Not a valid HTML table attribute.
+Easy Trick to Remember 🧠
+rules = Rules for inside lines (inner borders).
+frame = Frame around the outside.
+One-Line Memory:
+
+rules = Controls the inner borders between table cells.
+
+✅ Answer: C. rules
+
+
+4.In a colspan="3" cell, how many physical cells does it replace in that row?
+A)True
+B)2
+C)3 // anwers
+D)4
+
+5.Which attribute is used to set the space between cells in a <table> tag?
+A)padding
+B)cellspacing  //answers
+C)gap
+D)spacing
+
+
+6.Which attribute was used to specify which outer borders of a table should be visible?
+A)rules
+B)frame  //answers
+C)border
+D)outline
+
+
+7.In the valign attribute, which value aligns text to the bottom of the cell?
+A)down
+B)b0ttom  //answer
+C)under
+D)baseline
+
+8.Which value for rules displays lines only between columns?
+A)rows
+B)cols //answer
+C)groups
+D)all
+
+
+The char attribute in a table cell is used to:
+
+Table Attributes • Level: Hard
+
+A)Set font
+B)Align text on a specific character (like a decimal)  //answer
+C)Count characters
+D)Hide text
+
+✅ Correct Answer: B. Align text on a specific character (like a decimal)
+
+Easy English Explanation
+
+The char attribute (used in older HTML tables) was used to align text on a specific character, such as a decimal point (.).
+
+This was useful for aligning numbers neatly.
+
+Example:
+<td align="char" char=".">12.50</td>
+<td align="char" char=".">345.7</td>
+
+Here, the numbers are aligned at the decimal point (.).
+
+Why the other options are wrong?
+❌ A. Set font → Fonts are controlled with CSS.
+❌ C. Count characters → char does not count characters.
+❌ D. Hide text → char does not hide text.
+Easy Trick to Remember 🧠
+char = Character
+Align on a character (like . or :)
+One-Line Memory:
+
+char = Align table text on a specific character (usually a decimal point).
+
+✅ Answer: B. Align text on a specific character (like a decimal).
+
+
+10.Which tag is used to define a group of columns in a table for formatting?
+
+Introduction to Tables • Level: Hard
+
+A)<column-grou>
+B)<colgroup> //answers
+C)<cols>
+D)<group>

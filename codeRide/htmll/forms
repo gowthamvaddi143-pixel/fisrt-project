@@ -1,0 +1,337 @@
+1.Which input type allows a user to select a date (year, month, day)?
+A)time
+B)calendar
+C)date  //answwrs
+D)datetime
+
+
+✅ Correct Answer: C. date
+
+Easy English Explanation
+
+The <input type="date"> lets the user select a date:
+
+📅 Year
+📅 Month
+📅 Day
+Example:
+<input type="date">
+
+When you click it, a calendar opens so you can pick a date.
+
+Why the other options are wrong?
+❌ A. time → Selects only the time (hours and minutes).
+❌ B. calendar → Not a valid HTML input type.
+❌ D. datetime → Not used in modern HTML5. (datetime-local is used instead.)
+Easy Trick to Remember 🧠
+date = 📅 Date (Year + Month + Day)
+time = 🕒 Time only
+datetime-local = 📅 + 🕒 Date and Time
+One-Line Memory:
+
+type="date" = Choose Year, Month, and Day.
+
+✅ Answer: C. date
+
+
+2.Which tag is used to create a non-selectable label for a group of options in a dropdown?
+A)<group>
+B)<optgroup>     //answers
+C)<label>
+D)<section></section>
+
+
+✅ Correct Answer: B. <optgroup>
+
+Easy English Explanation
+
+The <optgroup> tag is used to group related options inside a <select> dropdown.
+
+The group label cannot be selected. Only the options inside it can be selected.
+
+Example:
+<select>
+  <optgroup label="Fruits">
+    <option>Apple</option>
+    <option>Mango</option>
+  </optgroup>
+
+  <optgroup label="Vegetables">
+    <option>Carrot</option>
+    <option>Potato</option>
+  </optgroup>
+</select>
+
+Here:
+
+Fruits → Group label (❌ cannot be selected)
+Apple, Mango → Options (✅ can be selected)
+Why the other options are wrong?
+❌ A. <group> → Not a valid HTML tag.
+❌ C. <label> → Used to label form elements, not to group dropdown options.
+❌ D. <section> → Used to organize webpage content, not dropdown options.
+Easy Trick to Remember 🧠
+<option> = One choice ✅
+<optgroup> = Group of choices 📂
+One-Line Memory:
+
+<optgroup> = Creates a non-selectable heading for options in a dropdown.
+
+✅ Answer: B. <optgroup></optgroup>
+
+
+3.Which method appends the form data to the URL in name/value pairs?
+A)POST
+B)SEND
+C)GET  //answeers
+D)PUT
+
+PUT
+
+✅ Correct Answer: C. GET
+
+Easy English Explanation
+
+The GET method sends the form data by adding it to the URL as name=value pairs.
+
+Example:
+<form action="/search" method="get">
+  <input type="text" name="q">
+  <input type="submit">
+</form>
+
+If the user types HTML, the URL becomes:
+
+/search?q=HTML
+
+Here:
+
+q = name
+HTML = value
+Why the other options are wrong?
+❌ A. POST → Sends data in the request body, not in the URL.
+❌ B. SEND → Not an HTML form method.
+❌ D. PUT → Used mainly in APIs, not standard HTML forms.
+Easy Trick to Remember 🧠
+GET = Get through URL 🌐
+POST = Post inside the body 📦
+One-Line Memory:
+
+GET = Data is visible in the URL as name=value.
+
+✅ Answer: C. GET
+
+4.What does the <label> tag's for attribute connect to?
+A)The input's name
+B)The input's class
+C)The input's id //answes
+D)The form's action
+
+
+✅ Correct Answer: C. The input's id
+
+Easy English Explanation
+
+The for attribute in the <label> tag connects to the id of an <input> element.
+
+When you click the label, the input field is automatically selected.
+
+Example:
+<label for="username">Username:</label>
+<input type="text" id="username">
+
+Here:
+
+for="username" ✅
+id="username" ✅
+
+Both values must be the same.
+
+Why the other options are wrong?
+❌ A. name → Used when sending form data, not for connecting labels.
+❌ B. class → Used for CSS and JavaScript.
+❌ D. action → Specifies where the form data is sent.
+Easy Trick to Remember 🧠
+for → looks FOR the id 👀
+for = id (same value)
+One-Line Memory:
+
+<label for=""> always connects to the input's id.
+
+✅ Answer: C. The input's id
+
+
+
+5.Which attribute in an <option> tag makes it the default choice when the page loads?
+
+A)default
+B)active
+C)selected  //answer
+D)checked
+
+
+✅ Correct Answer: C. selected
+
+Easy English Explanation
+
+The selected attribute makes an <option> the default choice when the page first loads.
+
+Example:
+<select>
+  <option>Apple</option>
+  <option selected>Mango</option>
+  <option>Orange</option>
+</select>
+
+When the page opens:
+
+✅ Mango is selected automatically.
+Why the other options are wrong?
+❌ A. default → Not a valid attribute for <option>.
+❌ B. active → Not a valid HTML attribute.
+❌ D. checked → Used for checkboxes and radio buttons, not <option>.
+Easy T
+rick to Remember 🧠
+selected = Selected by default ✅
+checked = Checkbox/Radio ☑️
+One-Line Memory:
+
+selected = Default option in a dropdown.
+
+✅ Answer: C. selected
+
+
+6.
+Flag for review
+Which input type is used to select a specific month and year?
+
+Input fields & buttons • Level: Medium
+
+A)date
+B)time
+C)month //answes
+D)calendar
+
+Correct Answer: C. month
+
+Easy English Explanation
+
+The <input type="month"> lets the user select only a Month and Year.
+
+📅 Example:
+
+July 2026
+December 2025
+Example:
+<input type="month">
+
+When clicked, it shows a picker for:
+
+✅ Month
+✅ Year
+
+(No day is selected.)
+
+Why the other options are wrong?
+❌ A. date → Selects Year + Month + Day.
+❌ B. time → Selects Hours + Minutes.
+❌ D. calendar → Not a valid HTML input type.
+Easy Trick to Remember 🧠
+date = 📅 Year + Month + Day
+month = 📅 Month + Year
+time = 🕒 Time only
+One-Line Memory:
+
+type="month" = Select Month and Year only.
+
+✅ Answer: C. month
+
+
+7.What happens if you add an option with no value attribute?
+A)The form crashes
+B)The text inside the tag is used as the value //answers
+C)It sends a null value
+D)It is not selectable
+
+
+✅ Correct Answer: B. The text inside the tag is used as the value.
+
+Easy English Explanation
+
+If an <option> does not have a value attribute, the browser uses the text inside the <option> as the value.
+
+Example:
+<select>
+  <option>Apple</option>
+  <option value="M">Mango</option>
+</select>
+
+If the user selects:
+
+Apple → Value sent = "Apple" ✅ (text is used)
+Mango → Value sent = "M" ✅ (because value="M" is given)
+Why the other options are wrong?
+❌ A. The form crashes → No, the form works normally.
+❌ C. It sends a null value → No, it sends the option text.
+❌ D. It is not selectable → No, it can still be selected.
+Easy Trick to Remember 🧠
+No value? → Use the visible text.
+Has value? → Use the value attribute.
+One-Line Memory:
+
+No value attribute = Option text becomes the value.
+
+✅ Answer: B. The text inside the tag is used as the value.
+
+
+8.Which attribute is used to specify a regular expression for input validation?
+A)regex
+B)validate
+C)pattern  //answers
+D)match
+
+✅ Correct Answer: C. pattern
+
+Easy English Explanation
+
+The pattern attribute is used to define a regular expression (regex) for input validation.
+
+It checks whether the user's input matches the required format.
+
+Example:
+<input type="text" pattern="[A-Za-z]{3,}">
+
+This means:
+
+✅ Only letters (A–Z, a–z)
+✅ At least 3 letters
+
+Examples:
+
+✔️ Ram → Valid
+✔️ Gowtham → Valid
+❌ R1 → Invalid (contains a number)
+Why the other options are wrong?
+❌ A. regex → Not a valid HTML attribute.
+❌ B. validate → Not a valid HTML attribute.
+❌ D. match → Not a valid HTML attribute.
+Easy Trick to Remember 🧠
+Pattern = Pattern to follow
+pattern → Checks the input format
+One-Line Memory:
+
+pattern = Uses a regular expression (regex) to validate user input.
+
+✅ Answer: C. pattern
+
+9.Which input type is specifically used to enter a password so the characters are masked?
+A)hidden
+B)secret
+C)password //answers
+D)mask
+
+10.Which input type is used for a time (hours, minutes)?
+A)clock
+B)hour
+C)time //answer
+D)date

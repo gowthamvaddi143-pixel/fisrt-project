@@ -1,0 +1,81 @@
+<script>
+    "use strict";
+    var x;
+    x = 10;
+    document.write(x);
+    
+</script>
+
+<br>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <script>
+
+        function VerifyPassword(){
+
+            var regExp = /^(?=.*[A-Z])\w{4,15}$/;
+
+            var pwd  = document.getElementById("txtPwd").value;
+
+            var lblMsg = document.getElementById("lblMsg");
+
+
+
+            if(pwd.match(regExp)){
+
+                lblMsg.innerHTML= "Strong Password".fontcolor('green').fontsize(2);
+
+            } else {
+
+                if(pwd.length<4){
+
+                    lblMsg.innerHTML = "Poor Password - Minimum 4 chars required".fontcolor('red').fontsize(2);
+
+                } else {
+
+                    lblMsg.innerHTML = "Weak Password - At least 1 uppercase letter required".fontcolor('gold').fontsize(2);
+
+                }
+
+            }
+
+
+
+        }
+
+    </script>
+
+</head>
+
+<body class="container-fluid">
+
+    <dl class="mt-3 w-25">
+
+        <dt>Your Password</dt>
+
+        <dd><input type="password" onkeyup="VerifyPassword()" id="txtPwd" class="form-control"></dd>
+
+        <dd>
+
+            <span id="lblMsg"></span>
+
+        </dd>
+
+    </dl>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+Which property is used to change the font of an element?
+A)font-style
+B)font-weight
+C)font-family  //answers
+D)font-type
+
+2.Which background property specifies the starting position of a background image?
+A)background-origin
+B)background-position //answers
+C)background-start
+D)bg-pos
+
+3.Which property controls the size of the text?
+A)text-size
+B)font-style
+C)font-size //answer
+D)size
+
+
+4.What is the default font-size of most browsers?
+A)12px
+B)14px
+C)16px //answrs
+D)18px
+
+
+✅ Correct Answer: C) 16px
+
+Simple English:
+
+Most web browsers use 16px as the default font size.
+
+Example:
+p {
+  font-size: 16px;
+}
+
+👉 If you don't set a font size in CSS, most browsers display text at 16px.
+
+Easy Remember:
+Default browser font size = 16px
+Options:
+❌ A) 12px
+❌ B) 14px
+✅ C) 16px
+❌ D) 18px
+
+✅ Final Answer: C) 16px
+
+
+5.Which property is used to make text italic?
+A)font-weight
+B)font-style  //answer
+C)font-variant
+D)text-italic
+
+6.Which value for background-repeat repeats the image only vertically?
+A)repeat-x
+B)repeat-v
+C)repeat-y //ANSWERS
+D)repeat-vertical
+
+
+7.What is the purpose of background-clip: content-box;?
+
+Colors, Background & Typography • Level: Hard
+
+A)It clips the image to the border
+B)It clips the image to the padding
+C)It clips the image to the content area only
+D)It removes the image
+
+
+✅ Correct Answer: C) It clips the image to the content area only
+
+Simple English:
+
+background-clip: content-box; means the background is shown only inside the content area.
+
+It does not appear in the padding or border.
+
+Example:
+.box {
+  background: lightblue;
+  padding: 20px;
+  border: 5px solid black;
+  background-clip: content-box;
+}
+
+👉 The light blue background is visible only in the content area.
+
+Easy Remember:
+content-box → Background only in content
+padding-box → Background in content + padding
+border-box → Background in content + padding + border (default)
+Options:
+❌ A) It clips the image to the border
+❌ B) It clips the image to the padding
+✅ C) It clips the image to the content area only
+❌ D) It removes the image
+
+✅ Final Answer: C) It clips the image to the content area only
+
+8.What does text-transform: uppercase; do?
+A)Bolds the text
+B)Capitalizes every letter  //answers
+C)Capitalizes the first letter
+D)Makes text small caps
+
+9.Which color format uses hue, saturation, and lightness?
+A)rgb()
+B)hex
+C)hsl() //answers
+D)cmyk()
+
+10.Which property is used to change the thickness of the text?
+A)font-thickness
+B)font-weight //ANSWERS
+C)text-weight
+D)boldness
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Clock(){
+            var now = new Date();
+            var time = now.toLocaleTimeString();
+            document.querySelector("p").innerHTML = time;
+        }
+        var thread;
+        function bodyload(){
+           thread =  setInterval(Clock, 1000);
+        }
+        function StopClick(){
+            clearInterval(thread);
+        }
+        function StartClick(){
+            bodyload();
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <button onclick="StopClick()">Stop</button>
+    <button onclick="StartClick()">Start</button>
+    <p align="center"></p>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function SubmitClick(){
+            var selectedCourses = ""
+            var checkboxs = document.getElementsByName("course");
+            for(var checkbox of checkboxs){if(checkbox.checked){
+                selectedCourses += checkbox.value + "<br>";
+               }
+
+
+            }
+            document.querySelector("p").innerHTML = `Selected Courses :<br> ${selectedCourses}`
+               
+        }
+    </script>
+</head>
+<body>
+    <ul style="list-style: none;">
+        <li><input type="checkbox" onchange="SubmitClick()" name="course" value="Java"><label >Java</label></li>
+        <li><input type="checkbox" onchange="SubmitClick()" name="course" value="ui"><label >ui</label></li>
+        <li><input type="checkbox" onchange="SubmitClick()" name="course" value="python"><label >python</label></li>
+        <li><input type="checkbox" onchange="SubmitClick()" name="course" value="dot net"><label >dot net</label></li>
+
+    </ul>
+    <button onclick="SubmitClick()">Submit</button>
+    <p></p>
+    
+</body>
+</html>
+
+
+
+<br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var position = 1;
+
+        function RightClick(){
+            position *=10;
+            document.querySelector("img").style.marginLeft = position +"px";
+
+        }
+
+        function LiftClick(){
+             position /=10;
+            document.querySelector("img").style.marginLeft = position +"px";
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <button onclick="LiftClick()"><</button>
+    <button onclick="RightClick()">></button>
+    <br>
+    <img src="../public/images/RCB.png">
+    
+</body>
+</html>

@@ -1,0 +1,324 @@
+What is the entity for the "Plus-Minus" symbol (±)?
+A)&pm;
+B)&plusmn;//answer
+C)&plus-minus;
+D)&pmn;
+
+✅ Correct Answer: B. &plusmn;
+
+Explanation (Simple)
+
+The HTML entity for the Plus-Minus (±) symbol is:
+
+&plusmn;
+
+It displays as:
+
+±
+
+Example:
+<p>Temperature: 25&plusmn;2&deg;C</p>
+
+Output:
+
+Temperature: 25±2°C
+Why not the others?
+❌ A. &pm; → Not a valid HTML entity.
+✅ B. &plusmn; → Correct! Displays ±.
+❌ C. &plus-minus; → Not a valid HTML entity.
+❌ D. &pmn; → Not a valid HTML entity.
+
+✅ Correct Answer: B. &plusmn;
+
+
+Which entity represents the "Leftward Double Arrow" (⇐)?
+A)&larr;
+B)&lArr; //qnswer
+C)&left;
+D)&leftarrow
+
+✅ Correct Answer: B. &lArr;
+
+Explanation (Simple)
+
+The HTML entity &lArr; represents the Leftward Double Arrow:
+
+&lArr;
+
+Output: ⇐
+
+Difference:
+&larr; → ← (Left Arrow, single)
+&lArr; → ⇐ (Leftward Double Arrow)
+Why not the others?
+❌ A. &larr; → Single left arrow (←).
+✅ B. &lArr; → Correct! Leftward Double Arrow (⇐).
+❌ C. &left; → Not a valid HTML entity.
+❌ D. &leftarrow → Not a valid HTML entity.
+
+✅ Correct Answer: B. &lArr;
+
+3.What is the entity for the mathematical "Infinity" symbol (∞)?
+A)&inf;
+B&infinite;
+C)&infin; //answer
+D)&8;
+
+4.✅ Correct Answer: C. &infin;
+
+Explanation (Simple)
+
+The HTML entity for the Infinity (∞) symbol is:
+
+&infin;
+
+Output:
+
+∞
+Example:
+<p>x &rarr; &infin;</p>
+
+Output:
+
+x → ∞
+Why not the others?
+❌ A. &inf; → Not a valid HTML entity.
+❌ B. &infinite; → Not a valid HTML entity.
+✅ C. &infin; → Correct! Displays ∞.
+❌ D. &8; → Not a valid HTML entity.
+
+✅ Correct Answer: C. &infin;
+
+
+Which entity represents the mathematical Division symbol (÷)?
+A)&div;
+B)&divide; //answer
+C)&ds;
+D)&sl;
+
+
+✅ Correct Answer: B. &divide;
+
+Explanation (Simple)
+
+The HTML entity for the Division (÷) symbol is:
+
+&divide;
+
+Output:
+
+÷
+Example:
+<p>10 &divide; 2 = 5</p>
+
+Output:
+
+10 ÷ 2 = 5
+Why not the others?
+❌ A. &div; → Not a valid HTML entity.
+✅ B. &divide; → Correct! Displays ÷.
+❌ C. &ds; → Not a valid HTML entity.
+❌ D. &sl; → Not a valid HTML entity.
+
+✅ Correct Answer: B. &divide;
+
+
+5.Which entity represents the mathematical Multiplication symbol (×)?
+A)&mult;
+B)&times;  //answer
+C)&mul;
+D)&x;
+
+✅ Correct Answer: B. &times;
+
+Explanation (Simple)
+
+The HTML entity for the Multiplication (×) symbol is:
+
+&times;
+
+Output:
+
+×
+Example:
+<p>5 &times; 4 = 20</p>
+
+Output:
+
+5 × 4 = 20
+Why not the others?
+❌ A. &mult; → Not a valid HTML entity.
+✅ B. &times; → Correct! Displays ×.
+❌ C. &mul; → Not a valid HTML entity.
+❌ D. &x; → Not a valid HTML entity.
+
+✅ Correct Answer: B. &times;
+
+6.What is the entity for the Trademark symbol (™)?
+A)&trademark;
+B)&tm;
+C)&trade;   //answer
+D)&tmark;
+
+✅ Correct Answer: C. &trade;
+
+Explanation (Simple)
+
+The HTML entity for the Trademark (™) symbol is:
+
+&trade;
+
+Output:
+
+™
+Example:
+<p>OpenAI&trade;</p>
+
+Output:
+
+OpenAI™
+Why not the others?
+❌ A. &trademark; → Not a valid HTML entity.
+❌ B. &tm; → Not a valid HTML entity.
+✅ C. &trade; → Correct! Displays ™.
+❌ D. &tmark; → Not a valid HTML entity.
+
+✅ Correct Answer: C. &trade;
+
+7.How do you represent a character using a Hexadecimal value in an entity?
+A)&#x[val];  //answer
+B)&hex[val];
+C)&h[val];
+D)&#[val];
+
+✅ Correct Answer: A. &#x[val];
+
+Explanation (Simple)
+
+To represent a character using a hexadecimal (base-16) Unicode value, use:
+
+&#xHEX_VALUE;
+&#x → Indicates a hexadecimal character reference.
+HEX_VALUE → The Unicode code point in hexadecimal.
+; → Ends the entity.
+Example:
+&#x00A9;
+
+Output:
+
+©
+
+Another example:
+
+&#x2665;
+
+Output:
+
+♥
+Why not the others?
+✅ A. &#x[val]; → Correct hexadecimal entity format.
+❌ B. &hex[val]; → Not valid HTML syntax.
+❌ C. &h[val]; → Not valid HTML syntax.
+❌ D. &#[val]; → This is for decimal numeric entities, not hexadecimal.
+
+✅ Correct Answer: A. &#x[val];
+
+
+8.Are HTML entity names case-sensitive?
+A)Yes  //answer
+B)No
+C)Only in Chrome
+D)Only for currency
+
+✅ Correct Answer: A. Yes
+
+Explanation (Simple)
+
+HTML entity names are case-sensitive. This means uppercase and lowercase letters matter.
+
+For example:
+
+✅ &copy; → © (Correct)
+❌ &COPY; → Invalid
+✅ &larr; → ← (Left Arrow)
+✅ &lArr; → ⇐ (Leftward Double Arrow)
+
+Notice that:
+
+&larr; and &lArr; are different entities because of the capital A.
+Why not the others?
+✅ A. Yes → Correct! Entity names are case-sensitive.
+❌ B. No → Incorrect.
+❌ C. Only in Chrome → Incorrect. This is part of HTML, not browser-specific.
+❌ D. Only for currency → Incorrect.
+
+✅ Correct Answer: A. Yes
+
+9.Why should you avoid using literal < and > in your text content?
+A)It makes the file larger
+B)Browsers may mistake them for HTML tags  //answer
+C)It is not allowed in CSS
+D)It breaks the internet
+
+✅ Correct Answer: B. Browsers may mistake them for HTML tags
+
+Explanation (Simple)
+
+The characters < and > are special in HTML because they are used to define HTML tags.
+
+If you use them directly in text, the browser may think you're writing an HTML tag instead of displaying the characters.
+
+Correct Way
+
+Use HTML entities:
+
+< → &lt;
+> → &gt;
+Example:
+<p>5 &lt; 10 and 10 &gt; 5</p>
+
+Output:
+
+5 < 10 and 10 > 5
+Why not the others?
+❌ A. It makes the file larger → Incorrect.
+✅ B. Browsers may mistake them for HTML tags → Correct.
+❌ C. It is not allowed in CSS → Incorrect.
+❌ D. It breaks the internet → Incorrect (and humorous!).
+
+✅ Correct Answer: B. Browsers may mistake them for HTML tags
+
+
+10.Which entity is used for the "bullet" symbol (•)?
+A)&bull;  //answer
+B)&bullet;
+C)&dot;
+D)&li;
+
+
+✅ Correct Answer: A. &bull;
+
+Explanation (Simple)
+
+The HTML entity for the bullet (•) symbol is:
+
+&bull;
+
+Output:
+
+•
+Example:
+<p>&bull; Apple</p>
+<p>&bull; Banana</p>
+
+Output:
+
+• Apple
+• Banana
+Why not the others?
+✅ A. &bull; → Correct! Displays the • symbol.
+❌ B. &bullet; → Not a valid HTML entity.
+❌ C. &dot; → Not the bullet symbol.
+❌ D. &li; → Not a valid HTML entity.
+
+✅ Correct Answer: A. &bull;

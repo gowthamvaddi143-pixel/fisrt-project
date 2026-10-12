@@ -1,0 +1,200 @@
+Which tag is used to embed an image in an HTML document?
+A)<image>
+B)<img> //answer
+C)<pic>
+D)<src>
+
+
+ 2.Is the <img> tag a void (self-closing) element?
+A)No, it needs </img>
+B)Yes, it has no closing tag  //answer
+C)Only in HTML4
+D)Only in XHTML
+
+
+3.What does the crossorigin attribute in <img> do?
+A)Rotates the image
+B)Configures CORS requests for images from other domains
+C)Links to a CSS file
+D)Sets image contrast
+
+✅ Correct Answer: B. Configures CORS requests for images from other domains
+
+Explanation (Simple)
+
+The crossorigin attribute on an <img> tag controls how the browser makes Cross-Origin Resource Sharing (CORS) requests when loading images from another domain.
+
+It is commonly used when:
+
+Loading images from a different website.
+Using the image in a <canvas> without "tainting" the canvas.
+Example:
+<img src="https://example.com/image.png" crossorigin="anonymous" alt="Image">
+
+Common values:
+
+anonymous → Sends the request without user credentials (cookies, HTTP authentication).
+use-credentials → Sends the request with credentials.
+Why not the others?
+❌ A. Rotates the image → Use CSS (transform: rotate()).
+✅ B. Configures CORS requests for images from other domains → Correct.
+❌ C. Links to a CSS file → Use the <link> tag.
+❌ D. Sets image contrast → Use CSS (filter: contrast()).
+
+✅ Correct Answer: B. Configures CORS requests for images from other domains
+
+
+4.What is the correct way to add a 5px border to an image in HTML (legacy)?
+A)border="5"  //answer
+B)outline="5"
+C)stroke="5"
+D)frame="5"
+
+
+✅ Correct Answer: A. border="5"
+
+Explanation (Simple)
+
+In legacy HTML, the border attribute was used to add a border around an image.
+
+Example (Legacy HTML):
+
+<img src="photo.jpg" border="5" alt="Photo">
+
+This adds a 5-pixel border around the image.
+
+Note
+
+The border attribute is deprecated in HTML5. The modern way is to use CSS:
+
+<img src="photo.jpg" alt="Photo" style="border: 5px solid black;">
+Why not the others?
+✅ A. border="5" → Correct (legacy HTML).
+❌ B. outline="5" → Not a valid HTML attribute.
+❌ C. stroke="5" → Used with SVG, not <img>.
+❌ D. frame="5" → Not a valid HTML attribute.
+
+✅ Correct Answer: A. border="5"
+
+
+
+5.Which format is generally not supported natively by web browsers for display?
+A)PNG
+B)TIFF  //answer
+C)WebP
+D)GIF
+
+✅ Correct Answer: B. TIFF
+
+Explanation (Simple)
+
+TIFF (Tagged Image File Format) is generally not supported natively by web browsers for displaying images on web pages.
+
+Common web image formats include:
+
+✅ PNG – Supports transparency.
+✅ GIF – Supports simple animations.
+✅ WebP – Modern format with good compression.
+❌ TIFF – Mainly used for printing, scanning, and professional image editing, not for web display.
+Why not the others?
+A. PNG → Supported by all modern browsers.
+B. TIFF → ✅ Correct. Generally not supported natively for web display.
+C. WebP → Supported by modern browsers.
+D. GIF → Supported by all major browsers.
+
+✅ Correct Answer: B. TIFF
+
+
+6.Which of these is a "Lossy" compression format?
+A)PNG
+B)SVG
+C)JPEG  //answer
+D)GIF
+
+
+GIF
+
+✅ Correct Answer: C. JPEG
+
+Explanation (Simple)
+
+JPEG (JPG) uses lossy compression, which means it removes some image data to make the file size much smaller. This may slightly reduce image quality.
+
+Image Formats:
+❌ PNG → Lossless compression.
+❌ SVG → Vector format (doesn't use lossy compression).
+✅ JPEG → Lossy compression.
+❌ GIF → Lossless compression (limited to 256 colors).
+Best Uses:
+JPEG → 📷 Photographs and realistic images.
+PNG → Logos and images with transparency.
+SVG → Icons, logos, and graphics that need to scale.
+GIF → Simple animations.
+
+✅ Correct Answer: C. JPEG
+
+
+7.Which attribute is used to provide a long description for complex images?
+A)alt
+B)longdesc //answer
+C)desc
+D)title
+
+✅ Correct Answer: B. longdesc
+
+Explanation (Simple)
+
+The longdesc attribute was used to provide a long description for complex images such as charts, diagrams, or graphs.
+
+Example (Legacy HTML):
+
+<img src="chart.png" alt="Sales chart" longdesc="chart-description.html">
+Why not the others?
+❌ A. alt → Provides a short alternative text, not a detailed description.
+✅ B. longdesc → Correct. Used for a long description of complex images (legacy HTML).
+❌ C. desc → Not a valid HTML attribute.
+❌ D. title → Shows a tooltip; it is not a long description.
+
+Note: longdesc is obsolete in HTML5 and is rarely used today. Modern websites typically provide detailed descriptions in nearby text or use ARIA techniques for accessibility.
+
+✅ Correct Answer: B. longdesc
+
+
+8.How can you set the height of an image directly in HTML
+A)size="100"
+B)height="100" //answer
+C)y="100"
+D)style-height="100"
+
+9.What is an "Image Map" in HTML?
+A)A map of where images are stored
+B)An image with multiple clickable areas  //answes
+C)A satellite view
+D)A CSS grid
+
+✅ Correct Answer: B. longdesc
+
+Explanation (Simple)
+
+The longdesc attribute was used to provide a long description for complex images such as charts, diagrams, or graphs.
+
+Example (Legacy HTML):
+
+<img src="chart.png" alt="Sales chart" longdesc="chart-description.html">
+Why not the others?
+❌ A. alt → Provides a short alternative text, not a detailed description.
+✅ B. longdesc → Correct. Used for a long description of complex images (legacy HTML).
+❌ C. desc → Not a valid HTML attribute.
+❌ D. title → Shows a tooltip; it is not a long description.
+
+Note: longdesc is obsolete in HTML5 and is rarely used today. Modern websites typically provide detailed descriptions in nearby text or use ARIA techniques for accessibility.
+
+✅ Correct Answer: B. longdesc
+
+
+10.What does a browser display if the src is empty but alt is present?
+A)Nothing
+B)A red X
+C)The text inside the alt attribut  //answer
+D)A popup error
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+         var ms = 0;
+         var sec = 0;
+         var min = 0;
+
+
+        function  StopWatch(){
+            var lblMs = document.getElementById("lblMs")
+            var lblSec = document.getElementById("lblSec")
+            var lblMin = document.getElementById("lblMin")
+           
+            ms++;
+            lblMs.innerHTML = ms;
+            if(ms==999){
+                sec++;
+
+                lblSec.innerHTML = sec
+                ms = 0;
+                if(ms==59){
+                    mit++;
+                    lblMin.innerHTML = min
+                    sec=0;
+                }
+            }
+              
+
+
+        }
+        function StartClick(){
+           thread = setInterval(StopWatch,1)
+
+        }
+        function Stopclick(){
+            clearInterval(thread)
+        }
+
+        
+    </script>
+</head>
+<body class="container-fluid d-flex justify-content-center">
+    <div class="w-50">
+        <div class="mt-5 row border border-1 p-3 fw-bold">
+
+        <div class="col">
+            00
+
+        </div>
+
+        <div class="col">
+            :
+
+        </div>
+
+        <div class="col">
+            <label id="lblMin">00</label>
+
+        </div>
+
+        <div class="col">
+            :
+
+        </div>
+
+       <div class="col">
+            <label id="lblSec">00</label>
+
+        </div>
+        <div class="col">
+            :
+
+        </div>
+        <div class="col">
+            <label id="lblMs">000</label>
+
+        </div>
+
+    </div>
+
+    <button onclick="StartClick()" class="btn btn-primary  mt-3">Start</button>
+    <button onclick="Stopclick()" class="btn btn-danger mt-3 ms-3">Stop</button>
+    </div>
+    
+</body>
+</html>

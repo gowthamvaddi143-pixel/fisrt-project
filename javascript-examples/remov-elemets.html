@@ -1,0 +1,29 @@
+<script>
+    //this elements is removeing in [pop()] is removing in lost element/
+       var cities = ["delhi","mumbai","chennai",,"godavari"]
+
+       cities.pop();
+       cities.map(function(city,index){
+        document.write(`[${index}]:${city}<br>`);
+       })
+
+    //this elements is removeing in [shift()] is removing in fisrt element/
+     var cities = ["delhi","mumbai","chennai",,"godavari"]
+
+       cities.shift();
+       cities.map(function(city,index){
+        document.write(`[${index}]:${city}<br>`);
+       })
+
+
+    //this elements is removeing in [splice()] is removing in specific element/
+      var cities = ["delhi","mumbai","chennai",,"godavari"]
+
+       cities.splice(1,1);
+       cities.map(function(city,index){
+        document.write(`[${index}]:${city}<br>`);
+       })
+
+
+
+</script>

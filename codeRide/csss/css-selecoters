@@ -1,0 +1,221 @@
+1.What is the specificity of an inline style?
+A)100
+B)500
+C)1000
+D)10000
+
+✅ Correct Answer: C) 1000
+
+Simple English:
+
+An inline style is written directly inside an HTML element.
+
+Example:
+
+<p style="color: red;">Hello</p>
+
+Inline styles have the highest specificity (except !important).
+
+Specificity Values:
+Element selector (p) = 1
+Class selector (.box) = 10
+ID selector (#header) = 100
+✅ Inline style = 1000
+Easy Remember:
+Element = 1
+Class = 10
+ID = 100
+Inline = 1000
+Options:
+❌ A) 100
+❌ B) 500
+✅ C) 1000
+❌ D) 10000
+
+✅ Final Answer: C) 1000
+
+
+2.Which combinator selects the direct children of an element?
+A)Space ( )
+B)=+
+C)>
+D)~
+
+✅ Correct Answer: C) >
+
+Simple English:
+
+The > (child combinator) selects only the direct children of an element.
+
+Example:
+div > p {
+  color: blue;
+}
+
+This selects only <p> elements that are direct children of <div>.
+
+HTML Example:
+<div>
+  <p>Selected ✅</p>
+  <section>
+    <p>Not Selected ❌</p>
+  </section>
+</div>
+
+👉 Only the first <p> is selected because it is a direct child of <div>.
+
+Easy Remember:
+> = Direct child
+Space ( ) = Any descendant (child, grandchild, etc.)
+Options:
+❌ A) Space ( ) → Selects all descendants
+❌ B) =+ → Not a valid CSS combinator
+✅ C) > → Direct child
+❌ D) ~ → General sibling selector
+
+✅ Final Answer: C) >
+
+
+3.Which selector targets a link the user has already visited?
+A):link
+B):active
+C):visited // answer
+D):hover
+
+
+4.Which selector targets an element by its lang
+A):lang()
+B)[lang]
+C)#lang
+D)Both 1 and 2 ///answer
+
+
+5.Which selector targets all siblings that follow a specific element?
+A)=+
+B)>
+C)~ //answes
+D)*
+
+
+
+6.In p { color: red; }, what is the selector?
+a)color
+B)red
+C)p //answer
+D){ }
+
+
+7.Which pseudo-element inserts content after an element
+
+A):after
+B)::after
+C):post
+D)::end
+
+✅ Correct Answer: B) ::after
+
+Simple English:
+
+The ::after pseudo-element adds content after an element.
+
+Example:
+p::after {
+  content: " 😊";
+}
+
+Output:
+
+Hello 😊
+
+The 😊 is added after the paragraph text.
+
+Easy Remember:
+::before → Adds content before the element.
+::after → Adds content after the element. ✅
+Options:
+❌ A) :after → Old CSS2 syntax (works in many browsers, but modern CSS uses ::after)
+✅ B) ::after → Correct (modern syntax)
+❌ C) :post → Not a CSS pseudo-element
+❌ D) ::end → Not a CSS pseudo-element
+
+✅ Final Answer: B) ::after
+\
+
+
+
+8.What is the specificity of a single ID selector?
+
+A)True
+B)10
+C)100
+D)1000
+
+
+✅ Correct Answer: C) 100
+
+Simple English:
+
+An ID selector starts with #.
+
+Example:
+#header {
+  color: blue;
+}
+
+Here, #header is an ID selector.
+
+Specificity Values:
+Element selector (p) = 1
+Class selector (.box) = 10
+✅ ID selector (#header) = 100
+Inline style = 1000
+Easy Remember:
+1 → Element
+10 → Class
+100 → ID
+1000 → Inline style
+Options:
+❌ A) True
+❌ B) 10
+✅ C) 100
+❌ D) 1000
+
+✅ Final Answer: C) 100
+
+
+Which attribute selector matches a value ending with "end"?
+A)[attr^="end"]
+B)[attr*="end"]
+C)[attr$="end"]/// answres
+D)[attr~="end"]
+
+10.Which selector styles highlighted text?
+A)::mark
+B)::selection  //answers
+C)::highlight
+d)::text
+
+
+✅ Correct Answer: B) ::selection
+
+Simple English:
+
+The ::selection pseudo-element styles the text selected (highlighted) by the user.
+
+Example:
+::selection {
+  background: yellow;
+  color: black;
+}
+
+👉 When you select text with your mouse, the selected text will have a yellow background and black color.
+
+Easy Remember:
+::selection = Selected (highlighted) text ✅
+Options:
+❌ A) ::mark – Not a valid CSS pseudo-element
+✅ B) ::selection – Correct
+❌ C) ::highlight – Not the standard answer
+❌ D) ::tex – Not a valid CSS pseudo-element
+
+✅ Final Answer: B) ::selection

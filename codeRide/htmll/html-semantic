@@ -1,0 +1,292 @@
+  What was the result of a "Div-only" structure on code maintainability?
+A)It was easier to debug
+B)It was difficult because every section looked identical in the code   //answers
+C)It made the file size smaller
+D)It prevented CSS from working
+
+
+✅ Correct Answer: B. It was difficult because every section looked identical in the code.
+
+Easy English:
+
+In HTML4, developers used only <div> tags for every part of the webpage.
+
+Example:
+
+<div>Header</div>
+<div>Menu</div>
+<div>Content</div>
+<div>Footer</div>
+
+All sections use the same <div> tag, so:
+
+❌ It is hard to know which section is which.
+❌ The code is difficult to read.
+❌ The code is difficult to maintain (update or fix).
+Easy Trick to Remember 🧠
+
+Many <div> = Many Problems
+
+Div-only → Confusing code → Hard to maintain
+Semantic tags (<header>, <nav>, <main>, <footer>) → Clear code → Easy to maintain
+One-Line Memory:
+
+Only <div> = All sections look the same = Hard to maintain.
+
+✅ Answer: B. It was difficult because every section looked identical in the code.
+
+
+
+
+2.Does a <footer> always have to be at the very bottom of the entire web page?
+A)Yes
+B)No, it can be the footer of an <article> or <section>  //answers
+C)Only if it contains copyright
+D)Only in mobile view
+
+
+Correct Answer: B. No, it can be the footer of an <article> or <section>
+
+Easy English Explanation:
+
+The <footer> tag does not always mean the bottom of the whole webpage.
+
+It can be used:
+
+✅ At the bottom of the entire page.
+✅ At the bottom of an <article>.
+✅ At the bottom of a <section>.
+Example:
+<article>
+  <h2>HTML5</h2>
+  <p>Learning HTML5 is fun.</p>
+
+  <footer>
+    Written by Gowtham
+  </footer>
+</article>
+
+Here, the <footer> belongs to the article, not the whole webpage.
+
+Easy Trick to Remember 🧠
+
+Footer = End of a section, not always end of the page.
+
+Page ends → Page footer
+Article ends → Article footer
+Section ends → Section footer
+One-Line Memory:
+
+<footer> = End of any content (page, article, or section).
+
+✅ Answer: B. No, it can be the footer of an <article> or <section>.
+
+
+  3.What is the main structural difference between <div> and <section>?
+A)<div> is block, <section> is inline
+B)<div> has no meaning, <section> implies a thematic groupin   ///answers
+C)<div> is newer
+D)<div> only works in HTML4
+
+
+  ✅ Correct Answer: B. <div> has no meaning, <section> implies a thematic grouping.
+
+Easy English Explanation
+<div>
+A generic container.
+It has no meaning.
+Used mainly for CSS and JavaScript.
+
+Example:
+
+<div class="box">
+  Welcome
+</div>
+<section>
+A semantic tag.
+It has meaning.
+Used to group related content (one topic).
+
+Example:
+
+<section>
+  <h2>About Us</h2>
+  <p>We build websites.</p>
+</section>
+Easy Trick to Remember 🧠
+<div> = Box 📦 (No meaning)
+<section> = Chapter 📖 (One topic, has meaning)
+One-Line Memory:
+
+<div> = Just a container.
+<section> = A container with a topic.
+
+✅ Answer: B. <div> has no meaning, <section> implies a thematic grouping.
+
+
+  4.Which new HTML5 tag is used to wrap an image along with its caption?
+A)<image-box>
+B)<figure> //answers
+C)<pic>
+D)<frame></frame>
+
+
+5.Which SEO drawback did HTML4 have regarding content prioritization?
+A)Search engines couldn't easily tell which content was the primary article  // answer
+B)Search engines couldn't read DIVs
+C)HTML4 was too slow
+D)Text was not indexable
+
+
+✅ Correct Answer: A. Search engines couldn't easily tell which content was the primary article.
+
+Easy English Explanation
+
+In HTML4, developers mostly used <div> tags.
+
+Example:
+
+<div>Header</div>
+<div>Menu</div>
+<div>Article</div>
+<div>Footer</div>
+
+All sections looked the same, so search engines (like Google) could not easily understand which part was the main content.
+
+In HTML5, semantic tags make this clear:
+
+<header>...</header>
+<nav>...</nav>
+<main>...</main>
+<article>...</article>
+<footer>...</footer>
+
+Now search engines can easily identify the main article, which helps with SEO (Search Engine Optimization).
+
+Easy Trick to Remember 🧠
+HTML4 → Only <div> → Google gets confused 😕
+HTML5 → <main> + <article> → Google understands 👍
+One-Line Memory:
+
+HTML4 = No clear main content → Poor SEO.
+
+✅ Answer: A. Search engines couldn't easily tell which content was the primary article.
+
+
+6.Which element serves as a container for introductory content or a set of navigation links at the top of a page?
+A)<nav>
+B)<head>
+C)<header> // answer
+D)<top></top>
+
+✅ Correct Answer: C. <header>
+
+Easy English Explanation
+
+The <header> element is used for the top part of a webpage or a section.
+
+It usually contains:
+
+📝 Title (Heading)
+📄 Logo
+🔗 Navigation links (<nav>)
+Example:
+<header>
+  <h1>My Website</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+Why the other options are wrong?
+❌ A. <nav> → Only for navigation links, not the whole top section.
+❌ B. <head> → Stores page information (title, CSS, metadata). It is not visible on the webpage.
+❌ D. <top> → This is not a valid HTML tag.
+Easy Trick to Remember 🧠
+<header> = Head of the page 👤
+<nav> = Navigation (menu) 🧭
+<head> = Hidden information ⚙️
+One-Line Memory:
+
+<header> = Top part of a page with logo, title, or navigation.
+
+✅ Answer: C. <header></header>
+
+
+7.Why was accessibility difficult in HTML4-based layouts?
+A)There were no links
+B)Screen readers couldn't distinguish between a header, a footer, or an ad  //answers
+C)Images were not allowed
+D)Text was always small
+
+
+✅ Correct Answer: B. Screen readers couldn't distinguish between a header, a footer, or an ad.
+
+Easy English Explanation
+
+In HTML4, developers mostly used only <div> tags.
+
+Example:
+
+<div>Header</div>
+<div>Advertisement</div>
+<div>Main Content</div>
+<div>Footer</div>
+
+For a screen reader (used by visually impaired people), every section looks like just a <div>.
+
+So it cannot easily tell:
+
+Which is the header
+Which is the main content
+Which is the footer
+Which is an advertisement
+
+This made accessibility difficult.
+
+HTML5 Solution
+
+HTML5 introduced semantic tags:
+
+<header>...</header>
+<main>...</main>
+<aside>Advertisement</aside>
+<footer>...</footer>
+
+Now screen readers can understand each part of the page much better.
+
+Easy Trick to Remember 🧠
+HTML4 = Only <div> = Screen reader gets confused 😕
+HTML5 = Semantic tags = Screen reader understands 👍
+One-Line Memory:
+
+HTML4 used only <div>, so screen readers couldn't identify different page sections.
+
+✅ Answer: B. Screen readers couldn't distinguish between a header, a footer, or an ad.
+
+
+8.How many <main> elements should be visible on a single HTML page?
+A)Zero
+B)Exactly one //answres
+C)One for every section
+D)Unlimited
+
+
+9.Which tag is used to define additional details that the user can view or hide on click?
+
+Semantic & Structural Elements • Level: Hard
+
+A)<toggle>
+B)<details>  //answers
+C)<summary>
+D)<hidden></hidden>
+
+
+Which tag should you use to highlight a portion of text that has a particular relevance in a new context?
+
+Semantic & Structural Elements • Level: Medium
+
+A)<b>
+B)<strong>
+C)<mark> //answer
+D)<em></em>

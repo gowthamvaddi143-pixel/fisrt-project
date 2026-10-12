@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data = [
+            {Name: 'TV', Price: 34000, Stock: true},
+            {Name: 'Mobile', Price: 14000, Stock: false},
+            {Name: 'Watch', Price: 2000, Stock: true},
+            {Name: 'Jeans', Price: 2200, Stock:true}
+        ];
+        function bodyload(){
+            data.map(function(product){
+                 var tr = document.createElement("tr");
+                 var tdName = document.createElement("td");
+                 var tdPrice = document.createElement("td");
+                 var tdStock = document.createElement("td");
+                 tdName.textContent = product.Name;
+                 tdPrice.textContent = product.Price;
+                 tdStock.textContent = product.Stock;
+                 tr.appendChild(tdName);
+                 tr.appendChild(tdPrice);
+                 tr.appendChild(tdStock);
+                 document.querySelector("tbody").appendChild(tr);
+            })
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <table width="100%" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>

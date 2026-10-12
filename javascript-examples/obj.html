@@ -1,0 +1,42 @@
+<script>
+let obj = {
+    Name : "TV",
+    Price:40000,
+    Qty:2,
+    total: function (){
+        return this.Qty * this.Price;
+
+     },
+     Print: function(){
+        document.write(`Name=${this.Name}<br>Price=${this.Price}<br>Qty=${this.Qty}<br>total=${this.total()}`)
+
+     }
+   
+}    
+obj.Qty = parseInt(prompt("Enter Qty"))
+obj.Print();
+
+
+</script>
+
+<script>
+    let Id =Symbol();
+    let product ={
+        [Id]:2,
+        Name : "Tv",
+        Price:45000,
+        Qty:2
+    }
+    delete product.Price;
+//Object.keys/values/entries
+
+    Object.entries(product).map(function(item){
+        document.write(item +" <br>");
+    })
+
+
+
+document.write(`Product Id :${product[Id]}`)
+
+
+</script>

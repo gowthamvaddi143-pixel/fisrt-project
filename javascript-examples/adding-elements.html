@@ -1,0 +1,29 @@
+<script>
+    //this is adding elements in [push() adding in lost one]
+    var cities = ["delih", "chennai"];
+
+    cities.push("hyd")
+    cities.map(function(city, index){
+        document.write(`[${index}]:${city}<br>`)
+    })
+
+   //this is adding elements [unshift()] adding in first one./
+    var cities = ["delih", "chennai"];
+
+    cities.unshift("hyd")
+    cities.map(function(city, index){
+        document.write(`[${index}]:${city}<br>`)
+    })
+
+
+
+     //this is adding elements [ splice ()] adding in  specific place  and deleted option /
+    var cities = ["delih", "chennai"];
+
+    cities.splice(1,0,"hyd")
+    cities.map(function(city, index){
+        document.write(`[${index}]:${city}<br>`)
+    })
+
+
+</script>

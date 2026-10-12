@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dialog{
+            width: 200px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    <script>function Toggle(){
+        var dialog = document.querySelector("dialog");
+        var checkbox = document.getElementById("toggleAds");
+        if(checkbox.checked){
+            dialog.open =true;
+        }else{
+            dialog.open = false;
+        }
+    }
+    function closeclick(){
+        document.querySelector("dialog").open = false;
+        document.getElementById("toggleAds").checked = false;
+    }
+    </script>
+</head>
+<body>
+   <input type="checkbox" onchange=" Toggle()" name="" id="toggleAds"><label >Show / Hide</label>
+   <div>
+    <dialog>
+        <div style="display: flex;justify-content: space-between; align-items: center;">
+            <h3>Ads</h3>
+        <button onclick="closeclick()">X</button> 
+        </div>
+        <img width="200" height="200" src="../public/images/dot.png" alt="">
+    </dialog>
+   </div>
+</body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-image: url(images/netflix\ backgrd.jpg);
+            background-size:cover ;
+        }
+        .shade{
+            background-color: rgba(0,0,0,0.7);
+            height: 101vh;
+            width: 102.1%;
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-bottom: -10px;
+
+    
+        }
+        header{
+            color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            font-family: arial;
+
+        }
+        .brand{
+            color: red;
+            font-size: 50px;
+            font-weight: bold;
+
+        }
+        .language{
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .btn-signin{
+            background-color: red;
+            padding: 10px;
+            text-align: center;
+            width: 80px;
+            border-radius: 5px;
+            margin-left: 5px;
+
+        }
+        .short-cuts{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        section{
+            color: white;
+            text-align: center;
+            padding-top: 100px;
+            font-family: ARIAL;
+
+        }
+        .title{
+            font-size: 50px;
+            font-weight: bold;
+            padding-bottom: 20px;
+
+        }
+        .subtitle{
+            font-size: 20px;
+        }
+        .main-title{
+            font-size: 14px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        .email{
+            background-color: rgba(51,49,49,0,748);
+            padding: 20px;
+            width: 300px;
+            border: 1px solid gray;
+            margin-right: 20x;
+
+        }
+        .btn-start{
+            background-color: red;
+            color: white;
+            padding: 20px;
+            width: 150px;
+
+        }
+        .start{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        footer{
+            display: grid;
+            grid-template-columns:2fr 2fr 2fr 2fr ;
+            background-color: black;
+            color: white;
+            padding: 50px;
+            height: 200px;
+            padding-left: -10px;
+
+        }
+        .col span{
+            display:block;
+
+
+        }
+        /* footer-button */
+        .button {
+            border: 1px solid white;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px;
+            width: 85px;
+        }
+        /* footer-button */
+        .lost-button  {
+        
+        padding-top: 25px;
+
+         }
+        .bi-chevron-down{
+            padding-left: 4px;
+        }
+        address{
+           padding-bottom: 20px;
+           position: relative;
+           margin-top: 0px;
+        }
+        .brand-name{
+            padding-top: 20px;
+        }
+
+
+            
+
+
+    </style>
+</head>
+<body>
+    <div class="shade">
+        <header>
+            <div >
+                <span class="brand">Netflix</span>
+            </div>
+            <div class="short-cuts">
+            <div class="language">
+                <span class="bi bi-translate"></span>
+                <span>Language</span>
+                <span class="bi bi-chevron-down"></span>
+            
+            </div>
+            <div class="btn-signin">
+                Signin
+            </div>
+            </div>
+        </header>
+        <section>
+            <article>
+                <div class="title">
+                    Unlimite movies,<br>Shows,and more
+                </div>
+                <div class="subtitle">
+                    Starts at ₹149. Cancel at any time.
+
+                </div>
+            </article>
+            <main>
+                <div class="main-title">
+                    Ready to watch? Enter your email to create or restart your membership.
+                </div>
+                <div class="start">
+                    <div class="email">
+                        <span>Email address</span>
+
+                    </div>
+                    <div class="btn-start">
+                        <span>Get Started</span>
+                        <span class="bi bi-chevron-right"></span>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+    
+    <footer>
+        
+        <div class="col">
+        
+            <span>FAQ</span>
+            <span>Investor Relations</span>
+            <span>Privacy</span> 
+            <span>Speed Test</span>
+        <div class="lost-button">
+         <div class="button">
+            <span class="bi bi-translate"></span>
+            <span >English</span>
+            <span class="bi bi-chevron-down"></span>
+
+        </div>
+        </div>
+
+        </div>
+        <div class="col">
+            <span>Help Centre</span>
+            <span>Jobs</span>
+            <span>Cookie Prefences</span>
+            <span>Legal Notices</span>
+
+        </div>
+        <div class="col">
+            <span>Account</span>
+            <span>Way to Watch</span>
+            <span>Corporate Informstion</span>
+            <span>Only on Netiflix</span>
+
+        </div >
+        <div class="col">
+            <span>Media Centre</span>
+            <Span>Terms of Use</Span>
+            <span>Contact Us</span>
+
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

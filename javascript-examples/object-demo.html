@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        var product = {
+            title: "Apple iPhone 17 (Black,256GB)",
+            title: "Apple iPhone 17 (white,256GB)",
+            price:59900,
+            rating:{rate:4.6, ratings:24557,reviews:9241},
+            features:[
+                "256GB ROM",
+                "15.49 cm (6.1inch)Super Retina XDR Display",
+                "48MP + 12MP | 12MP Front Camera",
+                "A16 Bionic Chip , 6 Core Processor",
+                "1 year warranty for phone and 1 year warranty for in Box Accessories."
+            ],
+            image:"../public/images/i phone black.webp",
+        }
+        function bodyload(){
+            document.getElementById("imgProduct").src = product.image;
+            document.getElementById("lblTitle").innerHTML = product.title;
+            document.getElementById("lblRatings").innerHTML=`
+            <span  class="badge bg-success text-white">${product.rating.rate}<span class="bi bi-star-fill"></span></span>
+            <span class="text-secondary"> ${product.rating.ratings.toLocaleString('en-in')}retings & ${product.rating.reviews}reviews</span>
+            `;
+            product.features.map(function(feature){
+                var li = document.createElement("li");
+                li.innerHTML =feature;
+                li.className = "my-2";
+                document.getElementById("lstFeatures").appendChild(li)
+            });
+            document.getElementById("lblprice").innerHTML = product.price.toLocaleString('en-in',{style:'currency',currency:'INR',maximumFractionDigits:0,maximumFractionDigits:0});
+
+       
+        
+        }
+
+
+    </script>
+</head>
+<body class="container-fluid" onload="bodyload()">
+    <div class="row mt-4">
+        <div class="col-2">
+            <img id="imgProduct" width="100%">
+        </div>
+        <div class="col-8">
+            <div id="lblTitle" style="font-weight: bold ; color: blue; font-size: 20px;"></div>
+            <div id="lblRatings"></div>
+            <ul id="lstFeatures" class="mt-4 text-secondary"style="margin: left -15px; "></ul>
+            <div id="lblTitle-1" style="font-weight: bold ; color: blue; font-size: 20px;"></div>
+
+
+        </div>
+        <div class="col-2">
+            <div id="lblprice" class="fw-bold fs-1"></div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

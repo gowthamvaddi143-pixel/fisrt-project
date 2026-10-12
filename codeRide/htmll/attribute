@@ -1,0 +1,205 @@
+1.Where are HTML attributes always specified?
+A)In the closing tag
+B)In the opening tag   //answer
+C)Between the tags
+D)In a separate CSS file
+
+2.Which attribute makes an element's content editable by the use?
+A)edit
+B)writeable
+C)contenteditable  //
+D)useredit
+
+✅ Correct Answer: C. contenteditable
+
+Explanation (Simple)
+
+The contenteditable attribute allows the user to edit the content of an HTML element directly in the browser.
+
+Example:
+<p contenteditable="true">
+  Click here and edit this text.
+</p>
+
+The user can click inside the paragraph and type or modify the text.
+
+Why not the others?
+❌ A. edit → Not a valid HTML attribute.
+❌ B. writeable → Not a valid HTML attribute.
+✅ C. contenteditable → Correct! Makes an element editable.
+❌ D. useredit → Not a valid HTML attribute.
+
+✅ Correct Answer: C. contenteditable
+
+3.Which attribute is used to group several options in a <select> dropdown?
+A)group
+B)optgroup  //answer
+C)list
+D)collection
+
+✅ Correct Answer: B. optgroup
+
+Explanation (Simple)
+
+The <optgroup> element is used to group related <option> items inside a <select> dropdown.
+
+Example:
+<select>
+  <optgroup label="Fruits">
+    <option>Apple</option>
+    <option>Banana</option>
+  </optgroup>
+
+  <optgroup label="Vegetables">
+    <option>Carrot</option>
+    <option>Potato</option>
+  </optgroup>
+</select>
+
+This creates a dropdown with two groups:
+
+Fruits
+Vegetables
+Why not the others?
+❌ A. group → Not a valid HTML element/attribute.
+✅ B. optgroup → Correct! Used to group options in a <select>.
+❌ C. list → Used with <input> and <datalist>, not for grouping <option> elements.
+❌ D. collection → Not a valid HTML element/attribute.
+
+✅ Correct Answer: B. optgroup
+
+
+4.Which attribute defines the HTTP method used when sending form-data?
+A)action
+B)route
+C)method   /answer
+D)type
+
+✅ Correct Answer: C. method
+
+Explanation (Simple)
+
+The method attribute of the <form> tag specifies the HTTP method used to send the form data to the server.
+
+The two most common values are:
+
+GET → Sends data in the URL.
+POST → Sends data in the request body.
+Example:
+<form action="/submit" method="post">
+  <input type="text" name="username">
+  <input type="submit" value="Submit">
+</form>
+Why not the others?
+❌ A. action → Specifies where the form data is sent.
+❌ B. route → Not a valid HTML form attribute.
+✅ C. method → Defines the HTTP method (GET or POST).
+❌ D. type → Specifies the type of an input element, not the form submission method.
+
+✅ Correct Answer: C. method
+
+
+5.Which attribute is used in a <td> tag to make it span across multiple columns?
+A)rowspan
+B)colspan //answer
+C)span
+D)width
+
+6.Which attribute is used to specify that an element is not yet relevant and should not be rendered
+A)hide
+B)invisible
+C)hidden//answer
+
+
+✅ Correct Answer: C. hidden
+
+Explanation (Simple)
+
+The hidden attribute tells the browser that an element is not relevant or should not be displayed.
+
+Example:
+<p hidden>This text is hidden.</p>
+
+The paragraph exists in the HTML but is not rendered (not shown) by the browser.
+
+Why not the others?
+❌ A. hide → Not a valid HTML attribute.
+❌ B. invisible → Not a valid HTML attribute.
+✅ C. hidden → Correct! Hides the element from being rendered.
+❌ D. (No valid option shown.)
+
+✅ Correct Answer: C. hidden
+
+7.Which attribute is used to provide a unique identifier for an element?
+A)class
+B)name
+C)id  //answers
+D)style
+
+8.Which attribute is used in a <script> tag to delay execution until the HTML is fully parsed
+A)async
+b)slow
+C)defer  //answer
+D)pause
+
+
+pause
+
+✅ Correct Answer: C. defer
+
+Explanation (Simple)
+
+The defer attribute tells the browser to:
+
+✅ Download the script while the HTML is being parsed.
+✅ Wait until the HTML document is fully parsed before executing the script.
+Example:
+<script src="script.js" defer></script>
+Difference between defer and async
+Attribute	When it executes
+defer	After the HTML is fully parsed (in document order) ✅
+async	As soon as the script finishes downloading (may interrupt HTML parsing)
+Why not the others?
+❌ A. async → Executes as soon as it's downloaded, not after parsing.
+❌ B. slow → Not a valid HTML attribute.
+✅ C. defer → Correct! Delays execution until the HTML is fully parsed.
+❌ D. pause → Not a valid HTML attribute.
+
+✅ Correct Answer: C. defer
+
+
+9.What happens if you use the same id attribute on two different elements
+A)The browser crashes
+B)The HTML becomes invalid  //answer
+C)CSS ignores both
+D)The first one is deleted
+
+Which attribute is used to specify a regular expression that the input's value is checked against?
+A)regex
+B)match
+C)pattern
+D)validate
+
+✅ Correct Answer: C. pattern
+
+Explanation (Simple)
+
+The pattern attribute is used with <input> elements to specify a regular expression (regex) that the user's input must match.
+
+Example:
+<input type="text" pattern="[A-Za-z]{3,}" required>
+
+This pattern means:
+
+[A-Za-z] → Only letters (A–Z, a–z)
+{3,} → At least 3 letters
+
+If the input doesn't match the pattern, the form won't submit.
+
+Why not the others?
+❌ A. regex → Not a valid HTML attribute.
+❌ B. match → Not a valid HTML attribute.
+✅ C. pattern → Correct! Used for regular expression validation.
+❌ D. validate → Not a valid HTML attribute.
+
+✅ Correct Answer: C. pattern

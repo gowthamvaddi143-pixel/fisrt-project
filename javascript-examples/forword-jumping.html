@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function VerifyId(){
+            var userid = document.getElementById("txtId").value;
+            if(userid==="john_nit"){
+                document.getElementById("pwdContainer").style.display = "block"
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" id="txtId" onblur="VerifyId()"></dd>
+        <div id="pwdContainer" style="display: none;">
+            <dt>Password</dt>
+        <dd><input type="password" id="txtPwd"></dd>
+        </div>
+    </dl>
+    <button>Login</button>
+</body>
+</html>

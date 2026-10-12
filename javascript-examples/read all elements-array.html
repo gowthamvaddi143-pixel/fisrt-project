@@ -1,0 +1,47 @@
+<script>
+    //this is separeted with (,)koma[toString()]
+    
+   var values = [10,20,"A", "B",true];
+   document.write(values.toString()+"<br>");
+
+   //this is custom separeted with your wish ()[join()]
+   var values = [10,20,"A", "B",true];
+   document.write(values.join("|")+"<br>");
+
+
+
+
+   //this read every element values and index number (void typ) offter deteted[forEach()]
+   var values = [10,20,"A", "B",true];
+   values.forEach(function(values,index){
+    document.write(`[${index}]:${values}<br>`);
+     })
+
+    //this read every element values and index number [map()] this store the date and reuses.
+       var values = [10,20,"A", "B",true,false];
+   values.map(function(values,index){
+    document.write(`[${index}]:${values}<br>`);
+     })
+   
+
+     //this is read every property in arrray [for...in]012345
+     var values = [10,20,"A", "B",true,false];
+     for(var property in values ){
+        document.write(`${property}<br>`)
+     }
+
+     //this is read every value in arrary [for..of]values..
+
+     var values = [10,20,"A", "B",true,false];
+     for(var values of values ){
+        document.write(`${values}<br>`)
+     }
+
+     //both of
+
+     var values = [10,20,"A", "B",true,false];
+     for(var property in values ){
+        document.write(`${property}:${values[property]}<br>`);
+     }
+
+</script>

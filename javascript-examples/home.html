@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //this  is img
+
+        function Click(){
+            document.getElementById("container").innerHTML="";
+            var pic =  document.createElement("img");
+            pic.src= "../public/images/python.jpg";
+            pic.width ="100";
+            pic.height="100";
+            document.getElementById("container").appendChild(pic)
+        }
+
+
+
+         // list item
+
+        function List(){
+            document.querySelector("body").innerHTML ="";
+            var unordered_list = document.createElement("ul");
+            var item1= document.createElement("li");
+            var item2 = document.createElement("li");
+            item1.textContent="HTML";
+            item2.textContent="CSS";
+
+            unordered_list.appendChild(item1);
+            unordered_list.appendChild(item2);
+
+            document.querySelector("body").appendChild(unordered_list)
+        }
+
+
+
+      //dropdown
+
+        function Down(){
+            document.querySelector("body").innerHTML = "";
+            var select = document.createElement("select");
+            var option1 =document. createElement("option");
+            var option2 = document . createElement("option");
+            var option3 = document.createElement("option");
+
+            option1.textContent="coures";
+            option2.textContent="HTML";
+            option3.textContent="CSS";
+
+            select.appendChild(option1);
+            select.appendChild(option2);
+            select.appendChild(option3);
+            document.querySelector("body").appendChild(select);
+        }
+
+    </script>
+</head>
+<body>
+    <button  onclick="Click()">Click</button>
+    <button onclick="List()">LIST</button>
+    <button onclick="Down()">DROPDOWN</button>
+    <br>
+    <div id="container" >
+
+    </div>
+
+   
+</body>
+</html>

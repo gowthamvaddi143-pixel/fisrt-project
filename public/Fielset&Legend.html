@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fielset&Legend</title>
+    <style>
+        .row{
+            width:600 ;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            font-size: 20px;
+        }
+        .control{
+            width: 100px;
+            padding: 20px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+        fieldset{
+            border:10px solid grey;
+            margin-bottom: 20px;
+            padding: 20px;
+            width: 600px;
+            box-shadow: 5px 5px 15px black;
+
+
+        }
+        legend{
+            background-color: rgb(205, 197, 197);
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+          text-shadow: 10px 10px 5px red;
+
+        }
+        .pass{
+            border-bottom: unset;
+            border-left:unset ;
+            border-right: unset;
+            border-top: 10px red solid;
+
+        }
+        .rest{
+            color: black;
+            padding-left: 50px;
+            padding-right: 100px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Personal details</legend>
+    <div class="row">
+        <div >Username</div>
+        <div class="control"></div>
+    </div>            
+    
+  
+       <div class="row">
+        <div>Age</div>
+        <div class="control"></div>
+    </div>            
+    </fieldset>
+    <fieldset>
+        <legend>Contact Details</legend>
+      <div class="row">
+        <div >city</div>
+        <div class="control"></div>
+    </div>            
+
+       <div class="row">
+        <div >State</div>
+        <div class="control"></div>
+    </div>            
+      <div class="row">
+        <div >Pin codee</div>
+        <div class="control"></div>
+    </div>    
+    </fieldset>        
+   <fieldset class="pass">
+    <legend class="rest">Password rest</legend>
+    <div>Recover Email.</div>
+    <div>SUbmit OTP</div>
+
+   </fieldset>
+
+   
+</body>
+</html>

@@ -1,0 +1,180 @@
+1.Which of the following is a primary use of the <div> tag?
+A)To create a hyperlink
+B)To group elements for styling and layout purposes  //answer
+C)To make text bold
+D)To insert an image
+
+
+2.How much semantic meaning does a <div> tag provide to search engines?
+A)High importance
+B)Medium importance
+C)No semantic meaning  //answers
+D)Only for images
+
+Correct Answer: ✅ C. No semantic meaning
+
+Explanation (Simple)
+
+The <div> tag is a generic container used to group HTML elements for styling or layout.
+
+It does not describe the content inside it.
+Search engines do not get any semantic meaning from a <div>.
+For meaningful structure, use semantic HTML tags like <header>, <nav>, <main>, <section>, <article>, and <footer>.
+
+Example:
+
+<div>
+  <h1>Welcome</h1>
+  <p>This is a website.</p>
+</div>
+
+Here, <div> only groups the content—it doesn't tell search engines what the content represents.
+
+✅ Correct Answer: C. No semantic meaning
+
+
+
+3.What is the impact of using too many nested <div> tags (often called "Divitis")?
+A)The browser crashes
+B)Makes the code hard to read and maintain  //anwers
+C)Improves SEO
+D)Increases download speed
+
+✅ Correct Answer: B. Makes the code hard to read and maintain
+
+Explanation (Simple)
+
+Using too many nested <div> tags (called "Divitis") creates unnecessary layers in your HTML.
+
+Problems:
+
+❌ Makes the code difficult to read.
+❌ Harder to maintain and debug.
+❌ Makes the HTML structure more complex than necessary.
+
+Bad Example:
+
+<div>
+  <div>
+    <div>
+      <p>Hello</p>
+    </div>
+  </div>
+</div>
+
+Better Example:
+
+<section>
+  <p>Hello</p>
+</section>
+
+Using semantic tags like <section>, <article>, or <main> makes your HTML cleaner and easier to understand.
+
+✅ Correct Answer: B. Makes the code hard to read and maintain
+
+
+4.In the box model, which part of the <div> is the space between the content and the border?
+A)Margin
+B)Padding  //answers
+C)Outline
+D)Gap
+
+
+✅ Correct Answer: B. Padding
+
+Explanation (Simple)
+
+In the CSS Box Model:
+
+Content → The actual text or image.
+Padding → Space between the content and the border.
+Border → The line around the padding and content.
+Margin → Space outside the border.
+Visual:
++---------------------------+
+|         Margin            |
+|  +---------------------+  |
+|  |      Border         |  |
+|  |  +---------------+  |  |
+|  |  |   Padding     |  |  |
+|  |  | +-----------+ |  |  |
+|  |  | | Content   | |  |  |
+|  |  | +-----------+ |  |  |
+|  |  +---------------+  |  |
+|  +---------------------+  |
++---------------------------+
+
+✅ Correct Answer: B. Padding
+
+
+5.Which CSS property is used to change the background color of a <div>?
+A)color
+B)background-color  //answer
+C)fill
+D)bg
+
+
+6.Why is it better to use <header> instead of <div class="header"> in modern web design?
+A)It is faster to load
+B)It provides better accessibility and SEO (Semantics)  //answer
+C)CSS only works on <header>
+D)Divs are deprecated
+
+7.Which of these is a valid way to write a <div> with an ID in HTML?
+A)<div id="main">  //answers
+B)<div #main>
+C)<div .main>
+D)<id div="main">
+
+
+8.
+Flag for review
+Which tag should you use for a standalone piece of content (like a blog post) instead of a <div>
+A)<aside>
+B)<article>  //answers
+C)<nav>
+D)<form>
+
+
+✅ Correct Answer: B. <article>
+
+Explanation (Simple)
+
+The <article> tag is used for standalone, self-contained content, such as:
+
+📝 Blog posts
+📰 News articles
+💬 Forum posts
+⭐ User comments
+
+It gives semantic meaning, helping browsers, search engines, and screen readers understand the content.
+
+Example:
+
+<article>
+  <h2>My First Blog Post</h2>
+  <p>Welcome to my blog!</p>
+</article>
+Why not the others?
+A. <aside> → For side content (e.g., sidebar, related links).
+B. <article> → ✅ Correct! Standalone content.
+C. <nav> → For navigation links.
+D. <form> → For user input forms.
+
+✅ Correct Answer: B. <article>
+
+
+9.What does the <div> tag stand for in HTML?
+A)Diverse
+b)Division  //answers
+C)Diagram
+D)Document
+
+
+
+10.Which CSS layout mode is commonly applied to a <div> to align its children?
+a)display: list-item
+B)display: flex  //answers
+C)display: text
+D)display: float
+

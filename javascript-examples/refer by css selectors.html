@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyload(){
+            document.querySelector("img").src = "../public/images/dc.png";
+            document.querySelector("#btnLogin").value ="Login";
+            document.querySelector(".btnprimary").value = "Register";
+            document.querySelector("p>img").src = "../public/images/travel-banner.jpg";
+
+        }
+    </script>  
+</head>
+<body onload="bodyload()">
+    <img width="300" height="300" border="2">
+    <div>
+        <form >
+             <input type="button" id="btnLogin">
+             <input type="button" class="btnprimary">
+        </form>
+    </div>
+    <p><img border 3 width="500" height="500">
+</p>
+    
+   
+  
+</body>
+</html>

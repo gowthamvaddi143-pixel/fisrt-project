@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //this is referring html elements are DOM hierarchy
+        function bodyload(){
+            window.document.images[0].src = "../public/images/rcb.png";
+            window.document.forms[0].elements[2].value = "Login";
+            window.document.forms[1].elements[2].value = "Register";
+
+        }
+
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img width="100" height="100" border="1">
+    </div>
+    <div>
+     <form >
+        <h4>User login</h4>
+        <div>
+            <label >User Name</label>
+            <div>
+                <input type="text">
+            </div>
+        </div>
+         <div>
+            <label >Password </label>
+            <div>
+                <input type="password">
+            </div>
+        </div>
+        <br>
+        <input type="button" >
+        
+    </form>
+
+    
+    </div>
+    <div>
+     <form >
+        <h4>Register</h4>
+        <div>
+            <label >Email</label>
+            <div>
+                <input type="email">
+            </div>
+        </div>
+         <div>
+            <label >mobile</label>
+            <div>
+                <input type="text">
+            </div>
+        </div>
+        <br>
+        <input type="button">
+        
+    </form>
+
+    
+    </div>
+   
+</body>
+</html>

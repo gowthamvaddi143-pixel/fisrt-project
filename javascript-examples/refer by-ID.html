@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function bodyload(){
+            document.getElementById("poster").src = "../public/images/a5.jpg";
+            document.getElementById("btnLogin").value = "LOGIN";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <img id="poster">
+    <div>
+        <form >
+            <input type="button" id="btnLogin">
+        </form>
+    </div>
+    
+</body>
+</html>

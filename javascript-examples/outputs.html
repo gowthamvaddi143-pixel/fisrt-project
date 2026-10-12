@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Deletealert(){
+            alert('Delete Record\nRecord Deleted Succesfully');
+
+        }
+        //this is confirm()
+        function deleteconfirm(){
+              result = confirm('Delete Record\nRecord Deleted Succesfully');
+           if(result==true){
+            alert('deleted..');
+           }else{
+            alert('canceled');  
+           }
+
+          
+        }
+        function documentwrite(){
+            result = confirm('Delete Record\nRecord Deleted Succesfully');
+           if(result==true){
+            document.write('<h2>Deleted</h2> <p>Dleted successfully</p><a href="./output.html"> Back HOME</a>');
+           }else{
+            alert('canceled');  
+           }
+
+
+        }
+
+        function innertext(){
+            result = confirm('Delete Record\nRecord Deleted Succesfully');
+           if(result==true){
+            document.querySelector("p").innerText ="deleted succesfully"
+
+           }else{
+            alert('canceled');  
+           }
+
+        }
+
+
+            function Console(){
+                console.warn('delete Clicked')
+            result = confirm('Delete Record\nRecord Deleted Succesfully');
+           if(result==true){
+            console.error('delete Confimed')
+            document.querySelector("p").outerHTML ="deleted succesfully"
+
+           }else{
+           document.querySelector("p").innerText ="Canceled"
+ 
+           }
+
+        }
+    </script>
+</head>
+<body>
+    <!-- this is alert not cancel option.. -->
+    <button onclick="Deletealert()">alert</button>
+
+    <!-- this is confirm this also cancel and ok option-->
+     <button onclick="deleteconfirm()">confirm</button>
+
+         <!-- this is confirm this also cancel and ok option-->
+     <button onclick="documentwrite()">confirm</button>
+<div>
+    
+
+      <!-- this is innertext/textContent this is showing the msg..-->
+     <button onclick="innertext()">delete</button>
+   <p></p>
+
+
+   <!-- this is outerhtml replace innerhtml 
+     -->
+   <H1>outerHTML</H1>
+
+
+
+
+    <!-- this is innertext/textContent this is showing the msg..-->
+     <button onclick="Console()">CONSOLE</button>
+   <p></p>
+
+
+
+    
+</div>
+</body>
+</html>

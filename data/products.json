@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Apple iPhone 17 (green)128 GB",
+        "image":"../public/images/iphone-white.webp",
+        "price":50000
+
+    },
+
+    {
+        "title": "Apple iPhone 17 (black)256 GB",
+        "image":"../public/images/iphone-black.webp",
+        "price":50000
+
+    },
+    
+    
+    
+    {
+        "title": "Apple iPhone 17 (black)256 GB",
+        "image":"../public/images/iphone-black.webp",
+        "price":50000
+
+    }
+]

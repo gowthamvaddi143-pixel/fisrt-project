@@ -1,0 +1,132 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../src/scripts/emi.js"></script>
+   </head>
+   <style>
+         h1{
+            font-family: arial;
+         }
+
+         .col-6{
+            border: 1px solid gray;
+            padding: 25px;
+            border-radius: 30px;
+            background-color: rgb(197, 227, 251);
+           
+
+         }
+
+         .col-5{
+            border: 1px solid gray;
+            padding: 25px;
+            border-radius: 30px;
+            margin-left: 30px;
+            background-color: rgb(197, 227, 251);
+
+
+         }
+         .emi{
+            background-color: rgb(68, 168, 235) ;
+            border-radius: 30px;
+         }
+         
+
+   </style>
+   <body class="container-fluid ">
+    <div >
+        <h1 class="mt-4 fw-bold d-flex justify-content-center" >Personal Loan EMI Calculator</h1>
+        <p class=" d-flex justify-content-center" >Take Out the Guess Work form Financial Planning.Calcullate your EMIs now!</p>
+    </div>
+    
+    <div class="row m-5 p-1" >
+        <div class="col-6" >
+            <div class=" d-flex justify-content-between" >
+                <span>Loan Amount</span>
+                <input type="text"  id="txtAmount">
+            </div>
+            <div class="my-3">
+               <input type="range" onchange="handleAmountChange()" id="rangeAmount"  min="100000" max="1000000" step="10000" value="100000" class="form-range">
+               <div class="d-flex justify-content-between">
+                
+                <span>&#8377; 1,00,000</span>
+                <span>&#8377; 10,00,000</span>
+               </div>
+            </div>
+
+              <div class=" d-flex justify-content-between" >
+                <span>Loan Tenure</span>
+                <input type="text"  id="txtYears" size="3">
+            </div>
+            <div class="my-3">
+               <input type="range" onchange="handleYearsChange()" id="rangeYears"  min="1" max="5" step="1" value="1" class="form-range">
+               <div class="d-flex justify-content-between">
+                
+                <span>1 Year</span>
+                <span>5 Years</span>
+               </div>
+
+
+            </div>
+
+              <div class=" d-flex justify-content-between" >
+                <span>Interest Rate </span>
+                <input type="text"  id="txtRate" size="5">
+            </div>
+            <div class="my-3">
+               <input type="range" onchange="handleRateChange()"  min="10.45" max="18.45" id="rangeRate" step="0.01" value="10.45" class="form-range">
+               <div class="d-flex justify-content-between">
+                
+                <span>10.54%</span>
+                <span>18.45%</span>
+               </div>
+            </div>
+            <button onclick="CalculateClick()" class="btn btn-primary m-4"> Calculate</button>
+            </div>
+            <div class="col-5 ">
+                <div class="emi ">
+                    <h4 class="d-flex justify-content-center">EMI Amount</h4>
+                       
+                <div  id="lblEMI" class="fw-bold fs-1 d-flex justify-content-center""></div>
+
+                </div>
+                <br>
+                <div>
+                    <span>Amount Payble</span>
+                    <span></span>
+                </div>
+                <br>
+                <div>
+                    <span>Interest Amount</span>
+                    <span></span>
+                </div>
+                <br>
+                <div>
+                    <span>Princopal Amount </span>
+                    <span></span>
+                </div >
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="d-flex justify-content-between">
+                <button class="btn btn-success">Apply Now</button>
+                <span>Note Get 9.99%*p.a.on 15laks+</span>
+            </div>
+
+                
+            </div>
+            
+            
+        </div>
+        
+       
+    
+
+   </body>
+   </html>

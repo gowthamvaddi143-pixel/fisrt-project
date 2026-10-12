@@ -1,0 +1,178 @@
+1.Which value of overflow is the default?
+a)hidden
+B)scrool
+c)visible  // answer ()
+D)auto
+
+.box {
+  width: 200px;
+  height: 100px;
+  overflow: visible; /* Default value */
+}>
+
+
+
+2.Which timing-function starts slow and speeds up at the end?
+a)ease-in //answer()
+b)ease-out
+C)ease-in-out
+d)linear 
+
+div {
+  transition: transform 2s ease-in;
+}>
+
+
+3.What is the benefit of "Tree Shaking" in modern CSS?
+A)It grows the code
+B)It removes dead or unused code during the build process  //answers
+C)It makes the site green
+D)It organizes files Previous
+
+Explanation (Simple)
+Tree Shaking is an optimization technique that removes unused (dead) code from your project when it is built.
+
+
+
+4.Which property ensures an animation looks smooth by using sub-pixel rendering?
+A )will-change   //answers()
+B )transform-style 
+C )backface-visibility 
+D )perspective 
+
+Explanation
+
+The will-change property tells the browser that an element is about to change (for example, transform or opacity). This allows the browser to optimize rendering in advance, which can lead to smoother animations, often by promoting the element to its own layer and enabling more efficient rendering.
+
+Example:
+
+.box {
+  will-change: transform;
+}
+
+
+5.What is PostCSS? 
+A )A preprocessor like Sass 
+\B )A tool for transforming CSS with JS plugins 
+C )A type of HTML
+
+Simple Explanation
+
+PostCSS is a tool that processes and transforms CSS using JavaScript plugins. It can:
+
+Add vendor prefixes automatically
+Optimize and minify CSS
+Enable future CSS features
+Remove unused CSS (with appropriate plugins)
+
+Correct Answer: ✅ B) A tool for transforming CSS with JS plugins
+
+
+6.To hide only the vertical scrollbar while allowing horizontal scrolling, use:
+A)overflow: hidden;
+B)overflow-y: hidden; overflow-x: scroll;
+C)scroll: horizontal;
+D)overflow: x;
+
+
+Example
+.container {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+Explanation
+overflow-y: hidden; → Hides the vertical scrollbar.
+overflow-x: scroll; → Allows horizontal scrolling.
+Correct Answer: ✅ overflow-y: hidden; overflow-x: scroll;
+
+
+7.Which media feature targets devices that use a mouse/pointer vs. a touch screen?
+A)device-type
+B)pointer
+C)hover
+D)Both 2 and 3
+
+Explanation
+pointer detects the type/accuracy of the pointing device:
+fine → Mouse or stylus
+coarse → Touch screen
+hover detects whether the primary input device can hover:
+hover: hover → Mouse
+hover: none → Touch screen
+
+Together, pointer and hover are commonly used to target mouse/pointer devices versus touch-screen devices.
+
+Correct Answer: ✅ D) Both 2 and 3
+
+8.Which property allows you to pause and resume a CSS animation?
+A )animation-play-state 
+B )animation-status 
+C )animation-pause 
+D )animation-flow
+
+Explanation (Simple Way)
+
+The animation-play-state property is used to pause and resume a CSS animation.
+
+running → Animation plays normally (default).
+paused → Animation stops at its current position.
+Change it back to running to continue from where it paused.
+
+9.Which unit is relative to 1% of the width of the viewport?
+A )vh 
+B )rem 
+C )vw 
+D )%
+
+✅ Correct Answer: C) vw
+
+Simple English:
+
+vw means Viewport Width.
+
+1vw = 1% of the browser screen width.
+100vw = Full screen width.
+Example:
+div {
+  width: 50vw;
+}
+
+👉 The div takes 50% of the screen width.
+
+Easy Remember:
+**vw = Viewport Width
+**vh = Viewport Height
+Options:
+
+
+10.What is "CSS Spriting"?
+A )A type of animation 
+B )Combining multiple small images into one file to reduce HTTP requests 
+C)Deleting CSS 
+D )A fast way to write code
+
+✅ Correct Answer: B) Combining multiple small images into one file to reduce HTTP requests
+
+Simple English:
+
+CSS Spriting means joining many small images into one image file.
+
+This helps the website load faster because the browser downloads one image instead of many images.
+
+Example:
+🏠 Home icon
+🔍 Search icon
+👤 User icon
+
+➡️ Combine all 3 icons into one image.
+
+Easy Remember:
+
+Sprite = Many images → One image → Faster website
+
+❌ A) Animation – Wrong
+✅ B) Combine images into one file – Correct
+❌ C) Deleting CSS – Wrong
+❌ D) Fast way to write code – Wrong
+
+✅ Final Answer: B) Combining multiple small images into one file to reduce HTTP requests

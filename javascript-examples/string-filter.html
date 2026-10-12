@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function filterData(){
+            var searchstring = document.getElementById("txtsearch").value;
+            var listItems  = document.getElementsByTagName("li");
+            for(var item of listItems){
+                if(item.textContent.toLowerCase().includes(searchstring.toLowerCase())){
+                    item.style.display = "block";
+                
+                }else{
+                    item.style.display ="none"
+                }
+            }
+        }
+
+    </script>
+</head>
+<body >
+    <input type="text" onkeyup="filterData()" placeholder="Search topic" id="txtsearch">
+    <ul>
+        <li>HTML Tutorial</li>
+        <li>CSS Examples</li>
+        <li>HTML Projects</li>
+        <li>Javascript Projects</li>
+        <li>javascript Examples</li>
+        <li>HTML Examples</li>
+        <li>Css Tutorail</li>
+
+    </ul>
+</body>
+</html>

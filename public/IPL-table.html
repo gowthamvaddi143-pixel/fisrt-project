@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL-table </title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        table{
+            width: 100%;
+            font-family: arial;
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+
+        }
+    
+        .flag{
+            width: 40px;
+        }
+        .team{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .bi-caret-up-fill{
+            color: green;
+        }
+        .bi-caret-down-fill{
+            color: red;
+        }
+        .bi-dash-lg{
+            font-size: 18px;
+
+        }
+        .w{
+            color: green;
+            border: 2px solid green;
+            border-radius: 100%;
+            padding: 5px;
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+
+        }
+         .l{
+            color: red;
+            border: 2px solid red;
+            border-radius: 100%;
+            padding: 5px;
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+
+        }
+
+         .n{
+            color: gray;
+            border: 2px solid gray;
+            border-radius: 100%;
+            padding: 5px;
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+
+        }
+        caption{
+            font-size: 20px;
+
+            font-weight: bold;
+
+            padding-bottom: 30px;
+  
+            text-align: left;   
+        }
+
+
+        
+    </style>
+</head>
+<body>
+   
+    <table border="1">
+         <caption>IPL 2026 Standings</caption>
+    <colgroup></colgroup>
+        <thead>
+            <tr>
+                <th width="200">POS</th>
+                <th></th>
+                <th>TEAM</th>
+                <th>P</th>
+                <th>W</th>
+                <th>L</th>
+                <th>NR</th>
+                <th>NNR</th>
+                <th>FOR</th>
+                <th>AGAINST</th>
+                <th>PTS</th>
+                <th>RECENT FORM</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td ><span class="bi bi-caret-up-fill"></span></td>
+                <td class="team"><img src="./images/PBKS.png" class="flag"><span class="team-name">PBKS</span></td>
+                <td>3</td>
+                <td>2</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0.637</td>
+                <td>375/37.5</td>
+                <td>371/40.0</td>
+                <td>5</td>
+                <td>
+                    <span class="n">N</span>
+                    <span class="w">W</span>
+                    <span class="w">W</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td ><span class="bi bi-caret-down-fill"></span></td>
+                <td class="team"><img src="./images/RCB.png" class="flag"><span class="team-name">RCB</span></td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2.501</td>
+                <td>453/35.4</td>
+                <td>408/40.0</td>
+                <td>4</td>
+                <td>
+                    <span class="w">W</span>
+                    <span class="w">W</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td ><span class="bi bi-caret-down-fill"></span></td>
+                <td class="team"><img src="./images/RR.png" class="flag"><span class="team-name">RR</span></td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>2</td>
+                <td>2.233</td>
+                <td>338/32.1</td>
+                <td>331/40.0</td>
+                <td>4</td>
+                <td>
+                    <span class="w">W</span>
+                    <span class="w">W</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td ><span class="bi bi-dash-lg"></span></td>
+                <td class="team"><img src="./images/DC.png" class="flag"><span class="team-name">DC</span></td>
+                <td>2</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1.170</td>
+                <td>309/35.2</td>
+                <td>309/35.2</td>
+                <td>4</td>
+                <td>
+                    <span class="w">W</span>
+                    <span class="w">W</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td ><span class="bi bi-dash-lg"></span></td>
+                <td class="team"><img src="./images/SRH.png" class="flag"><span class="team-name">SRH</span></td>
+                <td>3</td>
+                <td>1</td>
+                <td>2</td>
+                <td>0</td>
+
+                <td>0.275</td>
+                <td>583/60.0</td>
+                <td>524/55.3</td>
+                <td>2</td>
+                <td>
+                    <SPAn class="l">L</SPAn>
+                    <span class="w">W</span>
+                    <span class="l">L</span>
+                </td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+             <tr>
+                <td>Pagination</td>
+            </tr>
+
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>IPL Table</title>
+
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+
+        table {
+
+            width: 100%;
+
+            font-family: Arial;
+
+        }
+
+        .flag {
+
+            width: 40px;
+
+        }
+
+        .team-name {
+
+            font-size: 23px;
+
+        }
+
+        .team {
+
+            display: flex;
+
+            flex-direction: row;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        .bi-caret-down-fill {
+
+            color:red;
+
+        }
+
+        .bi-dash-lg {
+
+            font-size: 18px;
+
+        }
+
+        .bi-caret-up-fill {
+
+            color:green;
+
+        }
+
+        .w {
+
+            border:1px solid green;
+
+            color:green;
+
+            padding: 5px;
+
+            border-radius: 100%;
+
+             width: 20px;
+
+            display: inline-block;
+
+            text-align: center;
+
+        }
+
+         .l {
+
+            border:1px solid red;
+
+            color:red;
+
+            padding: 5px;
+
+            border-radius: 100%;
+
+            width: 20px;
+
+            display: inline-block;
+
+            text-align: center;
+
+        }
+
+        caption {
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            padding-bottom: 30px;
+
+            text-align: left;
+
+        }
+
+        ul {
+
+            list-style: none;
+
+            display: flex;
+
+            flex-direction: row;
+
+            width: 300px;
+
+            justify-content: space-between;
+
+            color:blue;
+
+        }
+
+       
+
+    </style>
+
+</head>
+
+<body>
+
+    <table border="0"  frame="box" cellspacing="5" cellpadding="5"  frame="void">
+
+        <caption>IPL 2026 Standings</caption>
+
+        <colgroup span="11"></colgroup>
+
+        <thead >
+
+            <tr height="50" valign="center">
+
+                <th width="30">POS</th>
+
+                <th></th>
+
+                <th width="110">TEAM</th>
+
+                <th>P</th>
+
+                <th>W</th>
+
+                <th>L</th>
+
+                <th>NR</th>
+
+                <th>NRR</th>
+
+                <th>FOR</th>
+
+                <th>AGAINST</th>
+
+                <th>PTS</th>
+
+                <th width="120">RECENT FORM</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr align="center">
+
+                <td >1</td>
+
+                <td> <span class="bi bi-caret-up-fill"></span> </td>
+
+                <td class="team"> <img src="./images/RCB.png" class="flag"> <span class="team-name">RCB</span> </td>
+
+                <td>2</td>
+
+                <td>2</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>2.501</td>
+
+                <td>434/35.4</td>
+
+                <td>408/40.0</td>
+
+                <td>4</td>
+
+                <td align="right">
+
+                    <span class="w">W</span>
+
+                    <span class="w">W</span>
+
+                </td>
+
+            </tr>
+
+            <tr align="center">
+
+                <td>2</td>
+
+                <td> <span class="bi bi-caret-down-fill"></span> </td>
+
+                <td class="team"> <img src="./images/RR.png" class="flag"> <span class="team-name">RR</span> </td>
+
+                <td>2</td>
+
+                <td>2</td>
+
+                <td>0</td>
+
+                <td>0</td>
+
+                <td>2.501</td>
+
+                <td>434/35.4</td>
+
+                <td>408/40.0</td>
+
+                <td>4</td>
+
+                <td align="right">
+
+                    <span class="w">W</span>
+
+                    <span class="w">W</span>
+
+                </td>
+
+            </tr>
+
+            <tr align="center">
+
+                <td>5</td>
+
+                <td> <span class="bi bi-dash-lg"></span> </td>
+
+                <td class="team"> <img src="./images/SRH.png" class="flag"> <span class="team-name">SRH</span> </td>
+
+                <td>3</td>
+
+                <td>1</td>
+
+                <td>2</td>
+
+                <td>0</td>
+
+                <td>2.501</td>
+
+                <td>434/35.4</td>
+
+                <td>408/40.0</td>
+
+                <td>4</td>
+
+                <td align="right">
+
+                    <span class="l">L</span>
+
+                    <span class="w">W</span>
+
+                    <span class="l">L</span>
+
+                </td>
+
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+
+            <tr>
+
+                <td colspan="12" align="center">
+
+                    <ul>
+
+                        <li>&laquo;</li>
+
+                        <li>1</li>
+
+                        <li>2</li>
+
+                        <li>3</li>
+
+                        <li>...</li>
+
+                        <li>&raquo;</li>
+
+                    </ul>
+
+                </td>
+
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+</body>
+
+</html>
+

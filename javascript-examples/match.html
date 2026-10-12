@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script>
+        // function VerifyPassword(){
+        // var regExp = /^(?=.*[A-Z])\w{4,15}$/;
+        // var pwd = document.getElementById("txtPwd").value;
+        // var lblmsg = document.getElementById("lblmsg");
+
+        // if(pwd.match(regExp)){
+        //     lblmsg.innerHTML = "Stron Password".fontcolor('green').fontsize(2);
+        // }else{
+        //     if(pwd.length<4){
+        //         lblmsg.innerHTML = "Poor password".fontcolor('red').fontsize(2);
+        //     }else {
+        //         lblmsg.innerHTML = "Week password".fontcolor('gold').fontsize(2);
+        //     }
+        // }
+
+        // }
+        function VerifyPassword(){
+            var regExp = /^(?=.*[A-Z])\w{4,15}$/;
+        var pwd = document.getElementById("txtPwd").value;
+        var progress = document.getElementById("progress");
+
+        if(pwd.match(regExp)){
+            progress.className = "progress-bar progress-bar-animated progress-bar-striped bg-success";
+            progress.style.width = "100%";
+            progress.innerHTML = "strong Password";
+            
+        }else {
+            if(pwd.length<4){
+                 progress.className = "progress-bar progress-bar-animated progress-bar-striped bg-danger";
+            progress.style.width = "25%";
+             progress.innerHTML = "poor ";
+
+               
+            }else {
+                 progress.className = "progress-bar progress-bar-animated progress-bar-striped bg-warning";
+            progress.style.width = "70%";
+            progress.innerHTML = "week PassWord"
+
+               
+            }
+    
+
+     }
+    }
+    
+            
+
+
+        
+
+
+
+        
+    </script>
+</head>
+<body class="container-fluid">
+    <dl class=" mt-3 w-25">
+    <dt>Your Password</dt>
+    <dd><input type="password" onkeyup="VerifyPassword()" id="txtPwd" class="form-control"></dd>
+    <dd class="progress" id="progress">
+      
+    </dd>
+    </dl>
+    
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header{
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 15px;
+            align-items: center;
+            font-family: inter,-apple-system,system-ui,sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+
+        }
+        
+      
+        .button1{
+            background-color:yellow;
+            padding: 15px;
+            width: 210px;
+            border: 1px;
+            border-radius: 13px;
+            font-size: 15px;
+            font-weight: bold;
+
+
+        }
+        .button2{
+            background-color:#f1f2f4;
+            padding: 15px;
+            width: 210px;
+            border: 1px;
+            border-radius: 13px;
+            font-size: 15px;
+            font-weight: bold;
+
+        }
+        .box1{
+            padding-right: 10px;
+        }
+        
+        .bi-person-standing-dress{
+            color:#2874f0;
+             font-size: 18px;
+            font-weight: bold;
+
+        }
+        .bi-airplane-engines-fill{
+            color: orangered;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .travel{
+            color: black;
+            font-size: 15px;
+        }
+        .filpkart{
+            color: black;
+            font-size: 15px;
+        }
+        .bi-geo-alt-fill,.location{
+            color: black;
+
+        }
+        .location1{
+            color: rgb(60, 10, 240);
+            font-size: 15px;
+        }
+        .bi-chevron-compact-right{
+            color: rgb(60, 10, 240);
+            font-size: 15px;
+        }
+        .location-bar{
+            padding-right: 50px;
+        }
+
+
+
+        .header1{
+             background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 15px;
+            align-items: center;
+            font-family: inter,-apple-system,system-ui,sans-serif;
+            font-size: 15px;
+        }
+
+
+        .search-bar{
+            padding: 10px;
+            background-color: #ffffff;
+            border-radius: 11px;
+            border: 2px rgb(5, 182, 252) solid;
+            width: 80%;
+            color: rgb(147, 143, 143);
+            padding-left:20px;
+        }
+        .icons{
+            padding-left: 40px;
+        }
+       
+        
+        .more{
+            padding-left:15px ;
+
+        }
+        
+        .bi-cart3{
+            padding-left:15px ;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+        .bi-person-circle{
+            padding-left: 15px;
+        }
+        .short-cuts{
+             background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 15px;
+            align-items: center;
+            font-family: inter,-apple-system,system-ui,sans-serif;
+            font-size: 15px;
+            text-align: center;
+        }
+        .icon-text{
+            display: block;
+            font-weight: 500px;
+        }
+
+        section{height: 250px;}
+
+
+        footer{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+            background-color:#212121;
+            font-size: 14px;
+            padding: 30px;
+            font-family: sans-serif;
+            padding-right: 10px;
+            line-height: 15px;
+
+        }
+        .col,.text{
+
+            display: block;
+            color: #fff;
+            font-size: 13px;
+            font-weight: bold;
+            padding-right: 10px;
+            padding-bottom: 5px;
+
+
+
+
+
+        }
+        .head{
+            color:#878787;
+            padding-bottom: 10px;
+            font-weight: 300;
+            font-size: 14px;
+        }
+        .footer-icon{
+            padding-top: 20px;
+            font-size: 20px;
+        }
+        .footer-text{
+            padding-bottom: 10px; 
+            font-weight: 300;
+            font-size: 14px;
+            color:#878787;
+            
+
+        }
+        .bi-facebook,.bi-youtube,.bi-instagram,.bi-twitter-x{
+
+            padding-right: 5px;
+        }
+        .lost{
+            color: #fff;
+             background-color:#212121;
+            font-size: 15px;
+            padding: 20px;
+            font-family: sans-serif;
+            padding-right: 100px;
+            font-weight: 500;
+
+        }
+        .bi-box,.bi-gift,.bi-star,.bi-c-circle,.bi-question-circle{
+            padding-right: 70px;
+        }
+        .number{
+            color: rgb(12, 12, 233);
+        }
+        .color{
+            color: #fff;
+          
+        }
+        .col-5{
+            border-left: 1px rgb(248, 245, 245) solid;
+            padding-left: 15px;
+            line-height: 17px;
+        }
+
+       
+        
+
+        
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <div class="box1"> 
+          <button class="button1"> <span class="bi bi-person-standing-dress">
+               <span class="filpkart"> <em>Flipkart</em></span>
+            </span></button> 
+            <button class="button2"><span class="bi bi-airplane-engines-fill">
+               <span class="travel"><em>Travel</em></span></span></button> 
+          
+
+        </div>
+    
+        <div class="location-bar">
+            <span class="bi bi-geo-alt-fill"></span>
+            <span class="location">Location not set </span>
+            <span class="location1">Select delivery location </span>
+            <span class="bi bi-chevron-compact-right"></span>
+        </div>
+
+
+
+
+
+
+    </header>
+    <div class="header1">
+        <div class="search-bar">
+            <span class="bi bi-search">
+            Search for Products,Brands nd More</span>
+            
+            
+        </div>
+
+        <div class="icons">
+            <span class="bi bi-person-circle ">Login<span class="bi bi-chevron-down"></span></span>
+            <span class="more">More <span class="bi bi-chevron-down"></span></span>
+            <span class="bi bi-cart3"></span>
+            <span class="cart">Cart</span>
+        </div>
+        <hr>
+    </div>
+<hr>
+    <div class="header2">
+        <div class="short-cuts">
+            <div>
+                <span class="bi bi-handbag"></span>
+                <span class="icon-text">For You</span>
+            </div>    <div>
+                <span class="bi bi-bag"></span>
+                <span class="icon-text">mobile</span>
+            </div>    
+            <div>
+                <span class="bi bi-phone"></span>
+                <span class="icon-text">Mobile</span>
+            </div>    
+            <div>
+                <span class="bi bi-bag"></span>
+                <span class="icon-text">mobile</span>
+            </div>    
+            <div>
+                <span class="bi bi-lamp"></span>
+                <span class="icon-text">Home</span>
+            </div>    
+            <div>
+                <span class="bi bi-tv"></span>
+                <span class="icon-text">Appilances</span>
+            </div>    
+            <div>
+                <span class="bi bi-car-front"></span>
+                <span class="icon-text">Toys</span>
+            </div>    
+            <div>
+                <span class="bi bi-bucket"></span>
+                <span class="icon-text">Food</span>
+            </div>    
+            <div>
+                <span class="bi bi-pen"></span>
+                <span class="icon-text">Pens</span>
+            </div>    
+            <div>
+                <span class="bi bi-bicycle"></span>
+                <span class="icon-text">2Wheeler</span>
+            </div>    
+            <div>
+                <span class="bi bi-book"></span>
+                <span class="icon-text">Books</span>
+            </div>    
+            <div>
+                <span class="bi bi-wallet"></span>
+                <span class="icon-text">Wallet</span>
+            </div>    
+            <div>
+                <span class="bi bi-person-wheelchair"></span>
+                <span class="icon-text">Chait</span>
+            </div>    
+            <div>
+                <span class="bi bi-lightbulb"></span>
+                <span class="icon-text">Light</span>
+            </div>    
+            
+            
+        </div>
+
+
+    </div>
+    <section></section>
+    <footer>
+        <div class="col">
+            <div class="head">ABOUT</div>
+            <span class="text">Contenet Us</span>
+            <span class="text">AboutUs</span>
+            <span class="text">Careers </span>
+            <span class="text">Flipkart Stories</span>
+            <span class="text">Press </span>
+            <span class="text">Corporate Infotmation</span>
+        </div>
+
+        <div class="col">
+            <div class="head">GROUP COMPANIES</div>
+            <span class="text">Myntra</span>
+            <span class="text">Cleartrip</span>
+            <span class="text">Shopsy </span>
+        </div>
+
+        <div class="col">
+            <div class="head">HELP</div>
+            <span class="text">Payments </span>
+            <span class="text">Shopping</span>
+            <span class="text">Cancellation & Returns </span>
+            <span class="text">FAQ </span> 
+        </div>
+
+        <div class="col">
+            <div class="head">CONSUMER POLICY</div>
+            <span class="text">Concellation & Returns </span>
+            <span class="text">Terms Of Use</span>
+            <span class="text">Pivacy </span>
+            <span class="text">Sitemap </span>
+            <span class="text">Grievnce Redressal </span>
+            <span class="text">EPR Compliance </span>
+            <span class="text">FSSAI Food Safaty Connect App</span>
+        </div>
+    
+        <div class="col-5 ">
+            <div class="head">Mail.Us:</div>
+            <span class="text">Flipkart Intrenet Private Limited, Buildings Alyssa, Begonia & Colve Embassy Tach Village, Outer Ring Road, Devarabeesanahalli Village, Karanataka, India</span>
+           <div class="footer-icon">
+         <aside>
+            <div class="footer-text">Social:</div>
+            <span class="bi bi-facebook"></span>
+            <span class="bi bi-twitter-x"></span>
+            <span class="bi bi-youtube"></span>
+            <span class="bi bi-instagram"></span>
+         </aside>
+
+           </div>
+        </div>
+
+        <div class="col">
+            <div class="head">Registered Office Address:</div>
+            <span class="text">Flipkart Internet Private Limited, Buildings Alyssa, Begonia & Colve Embassy Tech Village, outer Ring Road, Devarabeesanahalli Village, Bengaluru, 560103, Karnataka, India 
+                 </span>
+                 <span class="text">CIN : U51109KA2012PTC066107</span>
+                 <span class="text">Telephone: <span class="number">044-45614700 <span class="color">/</span>044-67415800</span></span>
+        </div>
+       
+    </footer>
+     <div class="lost">
+            <hr>
+        <span class="bi bi-box"><span>Become a Seller</span></span>
+        <span class="bi bi-star"><span> Advertise </span></span>
+        <span class="bi bi-gift"><span>Gift Cards </span></span>
+        <span class="bi bi-question-circle"><span>Help Center </span></span>
+        <span class="bi bi-c-circle"><span>2007-2026 Flipkart.com </span></span>
+       </div>
+    
+</body>
+</html>

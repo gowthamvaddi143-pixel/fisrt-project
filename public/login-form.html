@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            background-color: lightcyan;
+        }
+        .col-2{
+            padding: 30px;
+        }
+        form{
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px;
+            font-family: arial;
+        }
+        fieldset{
+            border-right: none;
+            border-bottom: none;
+            border-left: none;
+            border-top: none;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            grid-gap: 50px;
+            
+
+        }
+        legend{
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .form-group{
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+        input{
+            font-size: 16px;
+            padding: 10px;
+            background-color: aquamarine;
+            border: none;
+            border-radius: 5px;
+
+        }
+        input::placeholder{
+            font-size: 13px;
+        }
+        label{
+            font-size: 14spx;
+            display: block;
+            padding-bottom: 5px;
+
+        }
+        .bi-dash{
+            font-size: 20px;
+            color: blanchedalmond;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="col-1"></div>
+
+
+    <div class="col-2">
+    <form >
+        <fieldset>
+            <legend><span class="bi bi-dash"></span>Identity Details</legend>
+            <div class="form-group">
+                <label for="fullname">FullName</label>
+                <div>
+            <input name="username"  type="text" placeholder="ed: John_nit">
+
+            </div>
+
+            </div>
+            <div class="form-group">
+                   <label for="username">UserName</label>
+                <div>
+                <input name="username"  type="text" placeholder="ed: John_nit">
+            </div>
+
+
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend><span class="bi bi-dash"></span>Security Access</legend>
+            <div class="form-group">
+                <label for="fullname">Password</label>
+                <div>
+            <input name="password"  type="password" >
+
+            </div>
+
+            </div>
+            <div class="form-group">
+                   <label for="username">Conf</label>
+                <div>
+                <input name="username"  type="text" placeholder="ed: John_nit">
+            </div>
+
+
+            </div>
+            
+        </fieldset>
+
+
+
+
+    </form>
+    </div>
+    
+</body>
+</html>

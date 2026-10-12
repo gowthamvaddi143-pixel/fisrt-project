@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script>
+        function Level1(){
+            document.querySelector("meter").value = 30;
+        }
+        function Level2(){
+            document.querySelector("meter").value = 70;
+        }
+        function Level3(){
+            document.querySelector("meter").value = 100;
+        }
+        var t1, t2, t3;
+        function VolumeClick(){
+           t1 = setTimeout(Level1, 3000);
+           t2 =  setTimeout(Level2, 6000);
+           t3 = setTimeout(Level3,10000);
+        }
+        function CancelClick(){
+            clearTimeout(t2);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="VolumeClick()" class="bi bi-volume-up-fill"></button>
+    <button onclick="CancelClick()">Cancel</button>
+    <br><br>
+    <meter min="1" max="100"></meter>
+</body>
+</html>

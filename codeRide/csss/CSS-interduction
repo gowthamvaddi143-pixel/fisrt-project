@@ -1,0 +1,187 @@
+1.Which is the correct HTML syntax for referring to an external style sheet named "mystyle.css"?
+A)<link rel="stylesheet" type="text/css" href="mystyle.css"> ///ansewr
+B)<style src="mystyle.css">
+C)<stylesheet>mystyle.css</stylesheet>
+D)<link src="mystyle.css">
+
+2.Can an HTML file have more than one `<link>` to different external CSS files?
+Internal, External & Inline Styles • Level: Medium
+A)No
+B)Yes ///ansewr
+C)Only in HTML5
+D)Only for mobile
+
+3.Which of the following is an advantage of CSS regarding page load speed?
+
+A)It increases the number of images
+B)CSS files are cached by the browser, reducing subsequent load times
+C)It replaces the need for an internet connection
+D)It compresses HTML automatically
+
+✅ Correct Answer: B) CSS files are cached by the browser, reducing subsequent load times
+
+Simple English:
+
+The browser stores (caches) the CSS file after the first visit.
+
+When the user visits the website again:
+
+✅ The browser uses the saved CSS file.
+✅ The page loads faster.
+✅ Less data is downloaded.
+Easy Remember:
+
+CSS Cache = Faster Website
+
+Options:
+❌ A) It increases the number of images
+✅ B) CSS files are cached by the browser, reducing subsequent load times
+❌ C) It replaces the need for an internet connection
+❌ D) It compresses HTML automatically
+
+✅ Final Answer: B) CSS files are cached by the browser, reducing subsequent load times
+
+
+4.How do you add a comment in a CSS file?
+
+
+A)// this is a comment
+B)/* this is a comment */ answers
+C)``
+D)# this is a comment
+
+5.Which of the following helps with accessibility in CSS?
+A)Using very small fonts
+B)Ensuring high color contrast via CSS //answers
+C)Removing all backgrounds
+D)Using only one font
+
+
+✅ Correct Answer: B) Ensuring high color contrast via CSS
+
+Simple English:
+
+High color contrast makes text easy to read for everyone, including people with vision problems.
+
+Example:
+body {
+  color: black;
+  background: white;
+}
+
+👉 Black text on a white background is easy to read.
+
+Easy Remember:
+
+High Contrast = Better Readability = Better Accessibility
+
+Options:
+❌ A) Using very small fonts
+✅ B) Ensuring high color contrast via CSS
+❌ C) Removing all backgrounds
+❌ D) Using only one font
+
+✅ Final Answer: B) Ensuring high color contrast via CSS
+
+6.What is a major advantage of using External CSS?
+A)It makes the HTML file larger
+B)It allows you to change the look of an entire website by changing one file //answer
+C)It only works in Chrome
+D)It requires no internet
+
+
+✅ Correct Answer: B) It allows you to change the look of an entire website by changing one file
+
+Simple English:
+
+External CSS means your CSS is in a separate .css file.
+
+If many HTML pages use the same CSS file:
+
+✅ Change one CSS file
+✅ All pages update automatically
+Example:
+<link rel="stylesheet" href="style.css">
+
+If you change style.css, every page using it gets the new design.
+
+Easy Remember:
+
+One CSS file → Update whole website
+
+Options:
+❌ A) It makes the HTML file larger
+✅ B) It allows you to change the look of an entire website by changing one file
+❌ C) It only works in Chrome
+❌ D) It requires no internet
+
+✅ Final Answer: B) It allows you to change the look of an entire website by changing one file
+
+
+
+7.Which of the following is a limitation of CSS?
+
+A)tcannot handle colors
+B)It cannot be used with HTML
+C)Browsers may interpret CSS differently (Cross-browser inconsistency) //answer
+D)It only works on Windows
+
+
+✅ Correct Answer: C) Browsers may interpret CSS differently (Cross-browser inconsistency)
+
+Simple English:
+
+A limitation of CSS is that different browsers (Chrome, Firefox, Safari, Edge) may display the same CSS slightly differently.
+
+Example:
+
+A CSS effect may:
+
+✅ Work perfectly in Chrome
+⚠️ Look slightly different in Firefox or Safari
+
+This is called cross-browser inconsistency.
+
+Easy Remember:
+
+Different Browser → Different Result
+
+Options:
+❌ A) It cannot handle colors
+❌ B) It cannot be used with HTML
+✅ C) Browsers may interpret CSS differently (Cross-browser inconsistency)
+❌ D) It only works on Windows
+
+✅ Final Answer: C) Browsers may interpret CSS differently (Cross-browser inconsistency)
+
+
+
+
+
+What does CSS stand for?
+
+Introduction to CSS, Advantages, Limitations • Level: Easy
+
+A)Creative Style Sheets
+B)Cascading Style Sheets  //answers
+C)Computer Style Sheets
+D)Colorful Style Shee
+
+What is the correct CSS syntax to make all <p> elements bold?
+
+Internal, External & Inline Styles • Level: Medium
+
+A)p {font-weight: bold;} //answres
+B)<p style="text-size:bold">
+C)p {text-size: bold;}
+D)all.p {font: bold;}
+
+
+If an Internal and External style define the same property for the same element, which one is applied (assuming equal specificity)?
+
+Internal, External & Inline Styles • Level: Hard
+
+A)The one defined last (Cascade order) answers
+B)Always Internal
+C)Always External
+D)Neither

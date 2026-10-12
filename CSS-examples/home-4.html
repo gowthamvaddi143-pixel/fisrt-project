@@ -1,0 +1,103 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            background-color:yellow;
+            color: red;
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 100px;
+        }
+        li:hover{
+            background-color: black;
+            color: whitesmoke;
+        }
+        li:active{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+        </ul>
+    </nav>
+    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+        .user-name+div{
+            display: none;
+        }
+        .user-name:focus+div{
+            display: block;
+            color: red;
+            font-size: 12px;
+        }
+        .user-name:focus{
+            outline: none;
+            border: 1px solid red;
+        }.mobile:read-only{
+            cursor: not-allowed;
+        }
+        button:disabled{
+            background-color: darkcyan;
+            cursor: not-allowed;
+
+        }
+        .terms+label{
+            color: red;
+        }
+        .terms:checked+label{
+            color: green;
+        }
+        .terms~button{
+            display: none;
+        }
+        .terms:checked~button{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <dl>
+            <dt>name</dt>
+            <dd>
+                <input type="text" placeholder="block lettters only"  class="user-name">
+                <div>block letters only</div>
+            </dd>
+            <dt>mobile</dt>
+            <dd><input type="text" class="mobile" value="+9198585733" readonly></dd>
+            <dt>tearms of service</dt>
+           <dd> <textarea disabled rows="4" cols="40">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, modi explicabo. Illo reiciendis ab commodi accusamus aperiam vel enim nemo, necessitatibus, autem ex quos nostrum consectetur repellendus nobis perferendis numquam?</textarea>
+            </dd>
+            <dd><input type="checkbox" class="terms"><label>Accept</label>
+                <br> <br>
+                <button disabled>submit</button>
+            </dd>
+        </dl>
+        
+    </form>
+    
+</body>
+</html>

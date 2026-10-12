@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p[class="effects"]{
+            color: red;
+        }
+        p[class^="effects"]{
+            background-color: blue;
+        }
+        p[class$="effects"]{
+            color: yellow;} 
+        
+          p[class|="effects"]{
+            color: rgb(255, 0, 123);
+        }*/
+
+        p[class~="effects"]{
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <p class="effects">pera-1</p>
+    <p class="peraeffects">pera-2</p>
+    <p class="effectspera">pera-3</p>
+    <p class="effects pera">pera-4</p>
+    <p class="pera effects">pera-5</p>
+    <p class="text effects pera ">pera-6</p>
+    <p class="pera-effects">pera-7</p>
+    <p class="effects-pera">pera-8</p>
+
+
+
+    
+</body>
+</html>

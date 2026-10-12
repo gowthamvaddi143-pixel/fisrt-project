@@ -1,0 +1,141 @@
+1.If you have <ol start="10" reversed>, what is the number of the second item?
+A)11
+B)9   //answer
+C)8
+D)12
+
+2.What is the result of `<ol start="10"><li>Item</li></ol>`?
+A)A bullet point
+B)Number 1
+C)Number 10
+D)An eror
+
+3.If you nest a list, where does the nested <ul> or <ol> go?
+A)Between two <li> tags
+B)After the closing </ul> tag
+C)Inside an <li> tag  //answer
+D)Before the opening <ul> tag
+
+✅ Correct Answer: C. Inside an <li> tag
+
+Explanation (Simple)
+
+When you create a nested list, the new <ul> or <ol> must be placed inside a list item (<li>).
+
+Example:
+<ul>
+  <li>Fruits
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+    </ul>
+  </li>
+  <li>Vegetables</li>
+</ul>
+
+Here, the nested <ul> is inside the <li> containing "Fruits".
+
+Why not the others?
+❌ A. Between two <li> tags → Invalid HTML.
+❌ B. After the closing </ul> tag → Outside the list.
+❌ D. Before the opening <ul> tag → Incorrect placement.
+
+✅ Correct Answer: C. Inside an <li> tag
+
+4.In an ordered list, `type="1"` is:
+A)Mandatory
+B)The default value  //answers
+C)Only for mobile
+D)Deprecated
+
+
+5.In the code <ol type="I">, what numbering style is used?
+A)Lowercase letters
+B)Uppercase Roman numerals
+C)Arabic numerals
+D)Bullet points
+
+
+6.Which tag is used for the items inside a `<datalist>`?
+A)`<li>`
+B)`<item>`
+C)`<option>`  //answer
+D)`<dt>`
+
+✅ Correct Answer: C. <option>
+
+Explanation (Simple)
+
+The <datalist> element contains <option> elements, which provide suggestions for an <input> field.
+
+Example:
+<input list="browsers" name="browser">
+
+<datalist id="browsers">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Edge">
+  <option value="Safari">
+</datalist>
+
+When the user types in the input box, these <option> values appear as suggestions.
+
+Why not the others?
+❌ A. <li> → Used for list items in <ul> or <ol>.
+❌ B. <item> → Not a valid HTML tag.
+❌ C. <option> → ✅ Correct! Used inside <datalist>.
+❌ D. <dt> → Used in a definition list (<dl>).
+
+✅ Correct Answer: C. <option>
+
+
+7.What is the main difference between <ul> and <ol>?
+A)<ul> is faster
+B)<ul> is for orderless items, <ol> is for sequential items //answer
+C)<ol> only works with numbers
+D)<ul> cannot be nested
+
+
+8.In CSS, which property changes the bullet to an image?
+A)list-style-image //anwer
+B)bullet-src
+C)list-image
+D)marker-style
+
+
+9.In an unordered list, the type="circle" attribute produces:
+A)A solid black dot
+B)A hollow circle  //answers
+C)A square
+D)No bullet
+
+10.How do you change the alignment of the `<legend>` text?
+A)`align="center"`
+B)CSS `text-align` //answer
+C)`pos="top"`
+D)`title-align="left"`
+
+
+✅ Correct Answer: B. CSS text-align
+
+Explanation (Simple)
+
+The <legend> tag is the title of a <fieldset>. To change its alignment, use the CSS text-align property.
+
+Example:
+<fieldset>
+  <legend style="text-align: center;">Personal Information</legend>
+</fieldset>
+
+Or with external CSS:
+
+legend {
+  text-align: center;
+}
+Why not the others?
+❌ A. align="center" → Obsolete/deprecated in HTML5.
+✅ B. CSS text-align → Correct and recommended.
+❌ C. pos="top" → Not a valid HTML attribute.
+❌ D. title-align="left" → Not a valid HTML attribute.
+
+✅ Correct Answer: B. CSS text-align

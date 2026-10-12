@@ -1,0 +1,16 @@
+<script>
+     var user = {
+        userid: "john123",
+        password: "john",
+        mobile: "9876543211"
+     }
+     var uid = prompt("Enter User Id / mobile");
+     var pwd = prompt("Enter Password");
+
+     if((user.userid===uid || user.mobile===uid) && user.password===pwd){
+         document.write("Login Success with " + uid);
+     } else {
+        alert("Invalid Credentials");
+     }
+
+</script>

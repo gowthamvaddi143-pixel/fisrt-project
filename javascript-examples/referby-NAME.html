@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //this is refer by using  name
+        function bodyload(){
+            poster.src ="../public/images/java.jpg";
+            frmLogin.btnLogin.value = "Login"
+            frmRegister.btnRegister.value = "Register"
+
+        }
+
+    </script>
+</head>
+<body onload="bodyload()">
+    <img width="200" height="200" border="1" name="poster">
+    <div>
+        <form name="frmLogin">
+            <div>
+                <input type="button" name="btnLogin">
+            </div>
+
+        </form>
+    </div>
+    <br>
+    <div>
+        <form name="frmRegister">
+            <div>
+                <input type="button" name="btnRegister">
+            </div>
+
+        </form>
+    </div>
+    
+</body>
+</html>

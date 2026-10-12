@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            
+        }
+        nav{
+            margin-top: 50px;
+        }
+        nav span{
+            margin-right: 30px;
+            font-size: 22px;
+            font-family: arial;
+        }
+        .form{
+            border: 1px solid black;
+            padding: 10px;
+            width: 200px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+             display: none;
+        }
+        h3{
+            font-size: 20px;
+            text-align: center;
+        }
+        .control{
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        .btn{
+            padding: 5px;
+            background-color: black;
+            color: white;
+            width: 100px;
+            text-align: center;
+        }
+       
+        .form:target{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <span><a href="#login">Login</a></span>
+            <span><a href="#register">Register</a></span>
+        </nav>
+        <section>
+            <div class="form" id="login">
+                <h3>Login</h3>
+                <dl>
+                    <dt>User Login</dt>
+                    <dd class="control"></dd>
+                     <dt>Password</dt>
+                    <dd class="control"></dd>
+                </dl>
+                <div class="btn">Login</div>
+
+
+            </div>
+            <div class="form" id="register">
+                <h3>Register</h3>
+                <dl>
+                    <dt>User Name</dt>
+                    <dd class="control"></dd>
+                     <dt>Password</dt>
+                    <dd class="control"></dd>
+                      <dt>Email</dt>
+                    <dd class="control"></dd>
+                      <dt>mobile</dt>
+                    <dd class="control"></dd>
+
+                </dl>
+                <div class="btn">Register</div>
+
+        </section>
+
+    </div>
+
+    
+</body>
+</html>

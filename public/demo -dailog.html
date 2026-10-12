@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<style>
+    var{
+        color: blue;
+    }
+    samp{
+        background-color: rgb(228, 277, 277);
+        border: 1px solid gray;
+        padding: 2px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+</style>
+
+<body>
+    <div>
+        Write a <big>function</big> <samp>createHelloWorld.</samp> It should return a 
+        new function that always  <small>returns</small> <samp>"Hello World".</samp>
+    </div>
+    <div>
+        <pre>
+            <code>
+                
+         var <var>createHelloWorld</var> = function(){ 
+
+        
+
+            return function(...args){
+
+                 return "Hello World";
+
+            }
+
+         };
+
+            </code>
+        </pre>
+    </div>
+    
+</body> -->
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        dialog{
+            border: 1px solid gray;
+             width: 300px;
+             padding: 20px;
+             margin-top:50px ;
+             font-family: arial;
+
+        }
+        .dailog-header{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(206, 197, 197);
+            padding: 20px;
+
+        }
+        .dailog-body{
+            padding: 20px;
+        }
+        .control{ 
+            border: 1px rgb(143, 137, 137) solid;
+            padding: 15px;
+            margin-bottom: 5px;
+            background-color:rgb(245, 241, 421);
+            border-radius: 5px;
+            color: rgb(111, 109, 109);
+            
+        }
+       .dailog-footer{
+        padding: 20px;
+        display: flex;
+        justify-content: end;
+       }
+       .btn-submit{
+        background-color: blue;
+        padding: 10px;
+        color: white;
+        width: 80px;
+        text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <dialog>
+        <div class="dailog-header">
+            <span> Talk to Advisor Form</span>
+            <span class="bi bi-x-lg"></span>
+
+
+        </div>
+        <div class="dailog-body">
+            <div class="control">Full Name </div>
+             <div class="control">Mobile Number </div>
+              <div class="control">Email address </div>
+               <div class="control">Select Course </div>
+
+        </div>
+        <div class="dailog-footer">
+            <div class="btn-submit">Submit</div>
+
+        </div>
+    </dialog>
+    
+</body>
+</html>

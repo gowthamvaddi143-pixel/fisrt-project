@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <!-- this is (?) zero or one occurrence of a character. -->
+         (?)
+       user Name: <input type="text" name="test-pattern" pattern="colou?r">
+       <button>Submit</button>
+    </form>
+    <br>
+
+    <!-- this is (*) zero or more occurrence of a character. -->
+     (*)
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="colou*r">
+       <button>Submit</button>
+    </form>
+    <br>
+
+    <!-- thus is (.) any single character [alphabet, number or special char]-->
+     (.)
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern=".Gowtham">
+       user Name: <input type="text" name="test-pattern" pattern=".g..">
+
+       <button>Submit</button>
+    </form>
+    <br>    
+          <!--this is(+) one or more occurrences of a character.   -->
+          (+)
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="colou+r">
+       <button>Submit</button>
+    </form>
+    <br>
+    <!-- this is (|)pipe)   It refers to OR in pattern. It allows multiple expressions.-->
+     (|)
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="red|color|">
+       <button>Submit</button>
+    </form>
+    <br>
+
+    <!--this is (\) It is used to transforms a meta character into normal character and vice versa. -->
+    (\)
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="gamil\.com">
+       user Name: <input type="text" name="test-pattern" pattern="\+91">
+
+       <button>Submit</button>
+    </form>
+    <br>
+
+     <!--this is (^) [caret] It is used to define start of expression. -->
+     <!-- this is ($)  It is used to define end of expression.  -->
+      (^$)
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="^[a-z]$">
+       <button>Submit</button>
+    </form>
+    <br>
+
+    <!-- this is ([])   It refers to a collection, it can individual char or range of chars..-->
+     
+     ([])
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="[a,d,f,g,A]"><!-- only specified chars allowed  one is allowed -->
+
+       user Name: <input type="text" name="test-pattern" pattern="[a-z,A-Z]"><!-- only specified chars allowed  one is allowed -->
+
+       
+       user Name: <input type="text" name="test-pattern" pattern="[a-z,A-Z]"><!-- only specified renge and one char is allowed -->
+
+       
+       user Name: <input type="text" name="test-pattern" pattern="[0-9]"><!-- only single digit number  one is allowed -->
+       <button>Submit</button>
+    </form>
+    <br>
+
+        <!--this is(^)      It excludes the specified.   -->
+          (^)
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="^d,s,w">    <!--d,s,w not allowed all others allowed  --> 
+
+       user Name: <input type="text" name="test-pattern" pattern="^d,s,w">   <!---->
+
+       <button>Submit</button>
+    </form>
+    <br>
+
+         <!--this is()   It is used to set priority in expression.  -->
+          ()
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="\([0-9]\)">
+       <button>Submit</button>
+    </form>
+    <br>
+
+
+    <!--   this is  It represent 0-9 any single digit number.  [0-9].  -->
+     (\d)
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="\d">
+       <button>Submit</button>
+    </form>
+    <br>
+
+ <!--   this is It refers to non-numerical. [number not allowed].  -->
+      (\D)
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="\D">
+       <button>Submit</button>
+    </form>
+    <br>
+
+
+
+     <!--   this is  It refers alphabet, number and underscore character.   -->
+      (\w )
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="\w">
+       <button>Submit</button>
+    </form>
+    <br>
+
+
+    <!--   this is    It refers to non-word chars. All special chars allowed except “_”.   -->
+      (\W )
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="\W">
+       <button>Submit</button>
+    </form>
+    <br>
+
+
+    <!--   this is       It refers to blank space.   -->
+      (\s )
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="\s">
+       <button>Submit</button>
+    </form>
+    <br>
+
+
+    <!--   this is       It refers to blank space.   -->
+      (\s )
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="\s">
+       <button>Submit</button>
+    </form>
+    <br>
+
+
+    <!--   this is        It ignores the capitalization of chars in expression.  -->
+      (\i)
+     <form >
+       user Name: <input type="text" name="test-pattern" pattern="\i">
+       <button>Submit</button>
+    </form>
+    <br>
+
+
+    
+
+    
+</body>
+</html>
